@@ -80,3 +80,24 @@ aside{
     }
   }
 }
+
+.list-inline{
+  display: block;
+  padding: 0;
+  li{
+    display: inline-block;
+    a{
+      color: #333;
+      text-decoration: none;
+      display: block;
+      padding: 6px 12px;
+      font-size: 16px;
+      border-radius: 4px;
+      background: #f3f3f3;
+      line-height: normal;
+    }
+    +li{
+      margin-left: 5px;
+    }
+  }
+}

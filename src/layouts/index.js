@@ -55,7 +55,7 @@ class Template extends React.Component {
     return(
       <div>
         <Helmet
-          title="Sibin Xavier: Freelace Frontend Developer"
+          title="Sibin Xavier: Freelance Frontend Developer"
           meta={[
             { name: 'description', content: `Personal Website to share my web development experience, Learnings, Mistakes, Frontend Development Tips, WordPress Tips,
     				Frontend Book, Personal guide and much more. Full details available on my blog blog.7chip.com` },
