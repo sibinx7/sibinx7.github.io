@@ -1,0 +1,82 @@
+.font-josefine-slab{
+  font-family: 'Josefin Slab', serif;
+}
+
+.font-jura{
+  font-family: 'Jura', sans-serif;
+}
+
+$font_weights: (100,200,300,400,500,600,700,800,900);
+
+@each $weight in $font_weights {
+  .text-w-#{$weight}{
+    font-weight: #{$weight};
+  }
+}
+body{
+  background-color: #f3f3f3;
+  font-size: 18px;
+  @extend .font-josefine-slab;
+}
+
+h1,h2,h3{
+  @extend .font-jura;
+}
+
+
+.image-content{
+  img{
+    border: none;
+  }
+}
+.clip-polygon{
+  clip-path: polygon(5% 5%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+  /* Note that percentages work as well as px */
+}
+
+.wrapper{
+  padding-left: 240px;
+}
+.page{
+  padding: 20px;
+  min-height: 100vh;
+  .post{
+    background: #fff;
+    padding: 40px 50px;
+  }
+}
+aside{
+  position: fixed;
+  width: 240px;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background: #fff;
+  border-right: 1px solid #ddd;
+  padding: 15px;
+}
+
+.content-start{
+  display: block;
+}
+
+.main-external{
+  padding: 0;
+  margin-left: -15px;
+  margin-right: -15px;
+  li{
+    list-style: none;
+    a{
+      padding: 5px 15px;
+      display: block;
+      color: #333;
+      font-size: 20px;
+      font-weight: 600;
+      text-decoration: none;
+      &:hover{
+        background:#f4f4f4;
+        color: #333;
+      }
+    }
+  }
+}

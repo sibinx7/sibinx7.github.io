@@ -4,9 +4,27 @@
   "version": "1.0.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "bootstrap": "4.0.0-beta",
+    "dateformat": "2.0.0",
     "gatsby": "^1.9.17",
-    "gatsby-link": "^1.6.15",
-    "gatsby-plugin-react-helmet": "^1.0.5"
+    "gatsby-link": "1.6.16",
+    "gatsby-plugin-canonical-urls": "1.0.6",
+    "gatsby-plugin-catch-links": "1.0.8",
+    "gatsby-plugin-feed": "1.3.9",
+    "gatsby-plugin-nprogress": "1.0.7",
+    "gatsby-plugin-react-helmet": "1.0.6",
+    "gatsby-plugin-sass": "1.0.10",
+    "gatsby-plugin-sharp": "1.6.6",
+    "gatsby-plugin-sitemap": "1.2.5",
+    "gatsby-remark-copy-linked-files": "1.5.7",
+    "gatsby-remark-prismjs": "1.2.7",
+    "gatsby-remark-responsive-image": "1.0.0-alpha13-alpha.435e0178",
+    "gatsby-source-filesystem": "1.4.12",
+    "gatsby-transformer-remark": "1.7.6",
+    "graphql-skip-limit": "1.0.5",
+    "prop-types": "15.5.10",
+    "rimraf": "2.6.1",
+    "uuid": "3.1.0"
   },
   "keywords": [
     "gatsby"
@@ -15,13 +33,18 @@
   "main": "n/a",
   "scripts": {
     "build": "gatsby build",
-		"develop": "gatsby develop",
-		"deploy": "gatsby build --prefix-paths && node_modules/.bin/gh-pages -b master -d public",
+    "develop": "gatsby develop",
+    "deploy": "gatsby build --prefix-paths && node_modules/.bin/gh-pages -b master -d public",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js'",
+    "preserve": "npm run build",
+    "serve": "gatsby serve",
+    "start": "npm run develop",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
+    "gatsby-cli": "1.1.6",
     "gh-pages": "1.0.0",
-    "prettier": "^1.6.1"
+    "node-sass": "4.5.3",
+    "prettier": "1.6.1"
   }
 }
