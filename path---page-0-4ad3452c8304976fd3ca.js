@@ -1,0 +1,2 @@
+webpackJsonp([2684010817782],{"./node_modules/json-loader/index.js!./.cache/json/page-0.json":function(e,t){e.exports={data:{site:{siteMetadata:{title:"Kostas Bariotis' Blog",description:"I'm Kostas Bariotis, a web developer, a proud wanderer and a passionate doer.\n\t\tMy mission is to write clean and efficient code, to solve problems on the web and to learn something more.",siteUrl:"https://kostasbariotis.com"}}},pathContext:{posts:[],page:0,pagesSum:1,prevPath:null,nextPath:null}}}});
+//# sourceMappingURL=path---page-0-4ad3452c8304976fd3ca.js.map
