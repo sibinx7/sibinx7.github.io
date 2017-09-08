@@ -1,7 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Sibin Xavier's Blog]]></title><description><![CDATA[I'm Sibin Xavier, a fullstack web developer, a proud wanderer and a passionate doer.
 		I like to write about my learnings, mistakes, tips and tricks in Web development. During each project,
     i go through many difficult situations, i like to write about these situations, so it may help some other people
-    and help to improve my skills.]]></description><link>http://github.com/dylang/node-rss</link><generator>RSS for Node</generator><lastBuildDate>Thu, 07 Sep 2017 07:10:20 GMT</lastBuildDate><item><title><![CDATA[Git Basic]]></title><description><![CDATA[Hello World Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla tortor, consequat sed sapien vitae, dapibus gravida tellus...]]></description><link>blog.7chip.com/2017-08-04/git-basic</link><guid isPermaLink="false">blog.7chip.com/2017-08-04/git-basic</guid><pubDate>Tue, 04 Apr 2017 09:40:42 GMT</pubDate><content:encoded>&lt;h2&gt;Hello World&lt;/h2&gt;
+    and help to improve my skills.]]></description><link>http://github.com/dylang/node-rss</link><generator>RSS for Node</generator><lastBuildDate>Fri, 08 Sep 2017 11:38:27 GMT</lastBuildDate><item><title><![CDATA[Livereload for Ruby on Rails Application]]></title><description><![CDATA[Every web designers like live reloading plugins. Most of the 
+frontend framework now support live reloading. Live reloading 
+is when we edit...]]></description><link>blog.7chip.com/2017-08-08/live-reload-for-ruby-on-rails</link><guid isPermaLink="false">blog.7chip.com/2017-08-08/live-reload-for-ruby-on-rails</guid><pubDate>Sat, 08 Apr 2017 09:40:42 GMT</pubDate><content:encoded>&lt;p&gt;Every web designers like live reloading plugins. Most of the
+frontend framework now support live reloading. Live reloading
+is when we edit or modify page, website will automatically reload. So
+Web developers can edit code on one Monitor and can see changes on another screen without any browser interaction.&lt;/p&gt;
+&lt;p&gt;I use live reload on &lt;code&gt;Middleman&lt;/code&gt; application, it has built in support for live reload. Recently i have a chance to work with a &lt;strong&gt;E-Commerse&lt;/strong&gt;
+application at &lt;a href=&quot;#&quot;&gt;Radon5&lt;/a&gt;, where i need to do more frontend works
+than backend, especially on UI design. I had tried &lt;strong&gt;gurad&lt;/strong&gt; and &lt;strong&gt;livereload&lt;/strong&gt; plugin with --Rails--, but it didn&apos;t work. So i started everything again and it working fine. It is very simple, just follow these steps.&lt;/p&gt;
+&lt;h3&gt;Gems&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Install &lt;code&gt;guard&lt;/code&gt;, &lt;code&gt;guard-livereload&lt;/code&gt;, &lt;code&gt;rack-livereload&lt;/code&gt; gems &lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3&gt;Browser Extension&lt;/h3&gt;
+&lt;p&gt;Install &lt;strong&gt;Chrome&lt;/strong&gt;, &lt;strong&gt;Firefox&lt;/strong&gt; browser extenstion.  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Chrome &lt;a href=&quot;https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei?hl=en&quot;&gt;livereload&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Firefox &lt;a href=&quot;https://addons.mozilla.org/en-US/firefox/addon/livereload/&quot;&gt;livereload&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-none&quot;&gt;&lt;code&gt;If these plugin not available on these url, Please search on Google&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;hr&gt;
+&lt;h3&gt;Configure Ruby application&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Create a &lt;code&gt;Guardfile&lt;/code&gt;, run this command &lt;code&gt;guard init livereload&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Add these lines to your &lt;strong&gt;development.rb&lt;/strong&gt; file (&lt;code&gt;config/environments/development.rb&lt;/code&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-none&quot;&gt;&lt;code&gt;	config.middleware.insert_after ActionDispatch::Static, Rack::LiveReload
+	# config.middleware.insert_before Rack::Lock, Rack::LiveReload&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;Open newly created &lt;code&gt;Guardfile&lt;/code&gt; and edit to set host, you can also include custom folders to livereload watch like this.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-none&quot;&gt;&lt;code&gt;	watch(%r{app/views/.+\.(#{rails_view_exts * &apos;|&apos;})$})
+	watch(%r{app/controller/.+\.rb})
+	watch(%r{app/assets/.+\.[scss|js]})
+	watch(%r{app/helpers/.+\.rb})
+	watch(%r{config/locales/.+\.yml})&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;Run server using &lt;code&gt;rails s&lt;/code&gt;, run &lt;code&gt;bundle exec guard&lt;/code&gt;  to watch changes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-none&quot;&gt;&lt;code&gt;If you use `ngRock` anyother tools, add those port on `Guardfile`&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;hr&gt;
+&lt;p&gt;Change files, it will automatically reload your page.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Git Basic]]></title><description><![CDATA[Hello World Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla tortor, consequat sed sapien vitae, dapibus gravida tellus...]]></description><link>blog.7chip.com/2017-08-04/git-basic</link><guid isPermaLink="false">blog.7chip.com/2017-08-04/git-basic</guid><pubDate>Tue, 04 Apr 2017 09:40:42 GMT</pubDate><content:encoded>&lt;h2&gt;Hello World&lt;/h2&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla tortor, consequat sed sapien vitae, dapibus gravida tellus. Fusce ultrices velit eget faucibus tincidunt. Donec eget turpis sed nunc tincidunt egestas quis nec magna. Aliquam erat volutpat. Praesent tempor aliquet facilisis. Phasellus sed leo laoreet, mollis eros ac, lobortis sapien. Mauris cursus magna et dolor vehicula dignissim. Sed vehicula consequat massa, vel vehicula neque mattis sed. Sed ac tincidunt nisl, sit amet sollicitudin ante. Donec dui augue, consequat nec molestie nec, ultricies a nunc. Aenean sed feugiat leo. Nam euismod, augue vitae consequat auctor, magna lorem blandit lectus, eu aliquam urna nibh a diam. Nullam pretium mauris vitae dignissim varius. Donec commodo nunc quis orci placerat tempus. Mauris et sapien at mauris posuere congue. Nullam volutpat mi erat, sed iaculis lacus scelerisque at.&lt;/p&gt;
 &lt;p&gt;Vivamus dictum nisi eu purus viverra fermentum. Aenean purus nunc, sagittis ac finibus in, aliquam sed erat. Donec interdum interdum eros vel cursus. Integer nec justo malesuada massa vestibulum dictum sit amet in massa. Suspendisse non molestie eros. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque pharetra lectus nec aliquam efficitur. Nam est risus, pharetra a enim nec, consectetur dignissim lorem. Duis efficitur turpis malesuada est faucibus vehicula. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec lacinia dapibus orci, sed aliquam mauris bibendum nec.&lt;/p&gt;
 &lt;p&gt;Integer at feugiat dui, id finibus mauris. Nam dictum mi at dolor vestibulum consectetur. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla sodales dolor quis quam maximus imperdiet. Integer lacinia, leo id pulvinar ultricies, turpis ex sodales augue, a elementum dui ipsum eu velit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent rhoncus blandit arcu vel gravida. Mauris elementum, leo et pharetra maximus, odio arcu scelerisque turpis, quis pellentesque urna mauris eget nisl. Vestibulum iaculis eleifend enim, id sollicitudin lorem pulvinar eu.&lt;/p&gt;
