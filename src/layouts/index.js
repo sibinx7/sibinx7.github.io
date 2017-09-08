@@ -29,13 +29,13 @@ const Header = () => (
             <a href="http://www.7chip.com" target="_blank">Company</a>
           </li>
           <li>
-            <a href="http://sibin.7chip.com/contact" target="_blank">Contact</a>
+            <a href="#" target="_blank">Contact</a>
           </li>
           <li>
-            <a href="http://sibin7771.youtube.com" target="_blank">Youtube</a>
+            <a href="http://www.youtube.com/sibin7771" target="_blank">Youtube</a>
           </li>
           <li>
-            <a href="http://sibin.7chip.com/portfolio" target="_blank">Portfolio</a>
+            <a href="#" target="_blank">Portfolio</a>
           </li>
         </ul>
       </div>
