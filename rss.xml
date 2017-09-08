@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Sibin Xavier's Blog]]></title><description><![CDATA[I'm Sibin Xavier, a fullstack web developer, a proud wanderer and a passionate doer.
 		I like to write about my learnings, mistakes, tips and tricks in Web development. During each project,
     i go through many difficult situations, i like to write about these situations, so it may help some other people
-    and help to improve my skills.]]></description><link>http://github.com/dylang/node-rss</link><generator>RSS for Node</generator><lastBuildDate>Fri, 08 Sep 2017 11:38:27 GMT</lastBuildDate><item><title><![CDATA[Livereload for Ruby on Rails Application]]></title><description><![CDATA[Every web designers like live reloading plugins. Most of the 
+    and help to improve my skills.]]></description><link>http://github.com/dylang/node-rss</link><generator>RSS for Node</generator><lastBuildDate>Fri, 08 Sep 2017 11:40:14 GMT</lastBuildDate><item><title><![CDATA[Livereload for Ruby on Rails Application]]></title><description><![CDATA[Every web designers like live reloading plugins. Most of the 
 frontend framework now support live reloading. Live reloading 
 is when we edit...]]></description><link>blog.7chip.com/2017-08-08/live-reload-for-ruby-on-rails</link><guid isPermaLink="false">blog.7chip.com/2017-08-08/live-reload-for-ruby-on-rails</guid><pubDate>Sat, 08 Apr 2017 09:40:42 GMT</pubDate><content:encoded>&lt;p&gt;Every web designers like live reloading plugins. Most of the
 frontend framework now support live reloading. Live reloading
