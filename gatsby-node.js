@@ -16,7 +16,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
         title
         description
       }
-    }
+		}
     allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] }
       limit: 1000
@@ -32,7 +32,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
             path
             tags
             title
-            draft
+						draft									
           }
         }
       }
@@ -64,14 +64,15 @@ function generateContent(createPage, graphqlResults) {
    */
   posts.forEach(({ node }, index) => {
     const prev = index === 0 ? false : posts[index - 1].node;
-    const next = index === posts.length - 1 ? false : posts[index + 1].node;
+		const next = index === posts.length - 1 ? false : posts[index + 1].node;
+		const cover= node.frontmatter.cover
     createPage({
       path: node.frontmatter.path,
       refPath: node.frontmatter.path,
       component: blogPostTemplate,
       context: {
         prev,
-        next
+				next
       }
     });
   });

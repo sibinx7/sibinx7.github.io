@@ -45,10 +45,12 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             path
             tags
-            draft
+						draft					
+				
           }
         }
       }
     }
   }
 `;
+

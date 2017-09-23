@@ -16,14 +16,21 @@ import MetaTags from '../components/MetaTags';
 
 
 export default function Template({ data, pathContext }) {
+	console.log(data)
   const { markdownRemark: post } = data;
   const { title, siteUrl } = data.site.siteMetadata;
   const { next, prev } = pathContext;
 
   const isProduction = process.env.NODE_ENV === 'production';
-  const fullUrl = `${siteUrl}${post.frontmatter.path}`;
+	const fullUrl = `${siteUrl}${post.frontmatter.path}`;
+	let coverImage = null;
+	if(post.frontmatter.image!=='' || post.frontmatter.image !== false){
+		console.log(post.frontmatter.image)
+		coverImage = require(`../${post.frontmatter.image}`)
+	}
+	
 
-  return (
+  return (	
     <div>
       <MetaTags
         title={`${post.frontmatter.title} - ${title}`}
@@ -32,6 +39,7 @@ export default function Template({ data, pathContext }) {
         path={post.frontmatter.path}
         siteUrl={siteUrl}
         noIndex={post.frontmatter.draft}
+				image={coverImage}
       />
 
       <main className="blog" role="main">
@@ -98,7 +106,7 @@ export const pageQuery = graphql`
         description
         siteUrl
       }
-    }
+		}
     markdownRemark(frontmatter: { path: { eq: $refPath } }) {
       html
       excerpt
@@ -107,7 +115,8 @@ export const pageQuery = graphql`
         path
         tags
         title
-        draft
+				draft		
+				image 	
       }
     }
   }

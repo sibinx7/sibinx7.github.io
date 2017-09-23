@@ -5,6 +5,7 @@ date: "2017-04-04T09:40:42.000Z"
 tags: Git, Github
 author: Sibin Xavier
 draft: false
+image: './' 
 ---
 
 ## Hello World

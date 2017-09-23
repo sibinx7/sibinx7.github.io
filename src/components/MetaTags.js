@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 const profileImage = require('../images/sibin-profile.jpg');
 
-const MetaTags = ({ title, description, path, tags, noIndex, siteUrl }) =>
+const MetaTags = ({ title, description, path, tags, noIndex, siteUrl, image }) =>
   <div>
     <Helmet
       title={title}
@@ -16,14 +16,14 @@ const MetaTags = ({ title, description, path, tags, noIndex, siteUrl }) =>
       {noIndex && <meta name="robots" content="noindex" />}
       <meta itemprop="name" content={title}/>
       <meta itemprop="desription" content={description}/>
-      <meta itemprop="image" content={profileImage}/>
+      <meta itemprop="image" content={image || profileImage}/>
 
       <meta property="og:site_name" content="Sibin Xavier" />
       <meta property="og:type" content="website" />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:url" content={`${siteUrl}${path}`} />
-      <meta property="og:image" content={profileImage}/>
+      <meta property="og:image" content={ image || profileImage}/>
 
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={title} />
@@ -31,7 +31,7 @@ const MetaTags = ({ title, description, path, tags, noIndex, siteUrl }) =>
       <meta name="twitter:url" content={`${siteUrl}${path}`} />
       <meta
         name="twitter:image"
-        content={profileImage}
+        content={ image || profileImage}
       />
     </Helmet>
   </div>;
@@ -42,7 +42,8 @@ MetaTags.propTypes = {
   path: PropTypes.string,
   tags: PropTypes.string,
   noIndex: PropTypes.bool,
-  siteUrl: PropTypes.string
+	siteUrl: PropTypes.string,
+	cover: PropTypes.string 
 };
 
 export default MetaTags;

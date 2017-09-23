@@ -5,6 +5,7 @@ date: "2017-04-08T09:40:42.000Z"
 tags: Ruby On Rails, Frontend, Livereload
 author: Sibin Xavier
 draft: false 
+image: pages/2017-08-08/live-reload-for-ruby-on-rails/livereload.jpg
 ---
 
 
@@ -12,6 +13,8 @@ Every web designers like live reloading plugins. Most of the
 frontend framework now support live reloading. Live reloading 
 is when we edit or modify page, website will automatically reload. So
 Web developers can edit code on one Monitor and can see changes on another screen without any browser interaction.
+
+![Live Reload](./livereload.jpg)
 
 I use live reload on `Middleman` application, it has built in support for live reload. Recently i have a chance to work with a **E-Commerse**
 application at [Radon5](#), where i need to do more frontend works 
