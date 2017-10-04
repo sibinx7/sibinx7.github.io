@@ -1,11 +1,11 @@
 ---
 title: "How to use Nginx and Apache on Ubuntu 16.04 and higher"
 path: "/2017-08-22/how-to-use-nginx-and-apache-together"
-data: "2017-08-22T09:40:42.000Z"
+date: "2017-08-22T09:40:42.000Z"
 tags: Server, Nginx, Apache, Ubuntu
 author: Sibin Xavier 
 draft: false 
-image: 'pages/2017-09-23/how-to-use-nginx-and-apache/nginx-vs-apache.png' 
+image: pages/2017-09-23/how-to-use-nginx-and-apache/nginx-vs-apache.png
 ---
 
 ## Apache and Nginx 

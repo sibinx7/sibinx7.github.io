@@ -24,8 +24,7 @@ export default function Template({ data, pathContext }) {
   const isProduction = process.env.NODE_ENV === 'production';
 	const fullUrl = `${siteUrl}${post.frontmatter.path}`;
 	let coverImage = null;
-	if(post.frontmatter.image!=='' || post.frontmatter.image !== false){
-		console.log(post.frontmatter.image)
+	if(post.frontmatter.image!=='' || post.frontmatter.image !== false){	
 		coverImage = require(`../${post.frontmatter.image}`)
 	}
 	

@@ -149,3 +149,7 @@ function paginate(array, page_size, page_number) {
   --page_number; // because pages logically start with 1, but technically with 0
   return array.slice(0).slice(page_number * page_size, (page_number + 1) * page_size);
 }
+
+exports.modifyWebpackConfig = ({config, stage}) => {
+	
+}

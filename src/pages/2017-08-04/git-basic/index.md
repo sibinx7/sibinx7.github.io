@@ -5,7 +5,6 @@ date: "2017-04-04T09:40:42.000Z"
 tags: Git, Github
 author: Sibin Xavier
 draft: false
-image: './' 
 ---
 
 ## Hello World
@@ -23,9 +22,3 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla tortor, conse
 Vivamus dictum nisi eu purus viverra fermentum. Aenean purus nunc, sagittis ac finibus in, aliquam sed erat. Donec interdum interdum eros vel cursus. Integer nec justo malesuada massa vestibulum dictum sit amet in massa. Suspendisse non molestie eros. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque pharetra lectus nec aliquam efficitur. Nam est risus, pharetra a enim nec, consectetur dignissim lorem. Duis efficitur turpis malesuada est faucibus vehicula. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec lacinia dapibus orci, sed aliquam mauris bibendum nec.
 
 Integer at feugiat dui, id finibus mauris. Nam dictum mi at dolor vestibulum consectetur. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla sodales dolor quis quam maximus imperdiet. Integer lacinia, leo id pulvinar ultricies, turpis ex sodales augue, a elementum dui ipsum eu velit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent rhoncus blandit arcu vel gravida. Mauris elementum, leo et pharetra maximus, odio arcu scelerisque turpis, quis pellentesque urna mauris eget nisl. Vestibulum iaculis eleifend enim, id sollicitudin lorem pulvinar eu.
-
-`hello-world.js`
-
-```
-  git push origin master
-```
