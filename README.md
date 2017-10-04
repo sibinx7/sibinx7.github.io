@@ -10,3 +10,8 @@ So i decided to build this website, I have a WordPress blog, which share full in
 more details..
 
 
+https://webpack.js.org/configuration/entry-context/#context
+https://github.com/gatsbyjs/gatsby/blob/master/www/src/templates/template-blog-post.js#L184
+https://github.com/gatsbyjs/gatsby/issues/1384
+https://webpack.js.org/guides/dependency-management/#require-context
+https://webpack.js.org/plugins/context-replacement-plugin/
