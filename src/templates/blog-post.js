@@ -25,9 +25,9 @@ export default function Template({ data, pathContext }) {
 	const fullUrl = `${siteUrl}${post.frontmatter.path}`;
 	let coverImage = null;
 	if(post.frontmatter.image!=='' || post.frontmatter.image !== false){	
-		coverImage = require(`../${post.frontmatter.image}`)
+		coverImage = post.frontmatter.image.relativePath
 	}
-	
+	console.log(post.frontmatter.image);
 
   return (	
     <div>
@@ -115,7 +115,10 @@ export const pageQuery = graphql`
         tags
         title
 				draft		
-				image 	
+				image{
+					id
+					relativePath 
+				}      
       }
     }
   }

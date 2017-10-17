@@ -5,7 +5,7 @@ date: "2017-04-08T09:40:42.000Z"
 tags: Ruby On Rails, Frontend, Livereload
 author: Sibin Xavier
 draft: false 
-image: pages/2017-08-08/live-reload-for-ruby-on-rails/livereload.jpg
+image: "livereload.jpg"
 ---
 
 

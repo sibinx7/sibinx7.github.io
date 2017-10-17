@@ -5,29 +5,7 @@
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "bootstrap": "4.0.0-beta",
-    "dateformat": "2.0.0",
-    "gatsby": "^1.9.17",
-    "gatsby-link": "1.6.16",
-    "gatsby-plugin-canonical-urls": "1.0.6",
-    "gatsby-plugin-catch-links": "1.0.8",
-    "gatsby-plugin-feed": "1.3.9",
-    "gatsby-plugin-nprogress": "1.0.7",
-    "gatsby-plugin-react-helmet": "1.0.6",
-    "gatsby-plugin-sass": "1.0.10",
-    "gatsby-plugin-sharp": "1.6.8",
-    "gatsby-plugin-sitemap": "1.2.5",
-    "gatsby-remark-copy-linked-files": "1.5.7",
-    "gatsby-remark-prismjs": "1.2.7",
-    "gatsby-remark-responsive-image": "false1.0.0-alpha13-alpha.435e0178",
-    "gatsby-source-filesystem": "1.4.12",
-    "gatsby-transformer-remark": "1.7.6",
-    "gatsby-transformer-sharp": "1.6.6",
-    "graphql-skip-limit": "1.0.5",
-    "install": "false0.10.1",
-    "prop-types": "15.5.10",
-    "rimraf": "2.6.1",
-    "sharp": "false0.18.4",
-    "uuid": "3.1.0"
+    "dateformat": "3.0.2"
   },
   "keywords": [
     "gatsby"
@@ -45,9 +23,32 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "gatsby-cli": "1.1.6",
+    "babel-preset-env": "^1.6.0",
+    "gatsby-cli": "1.1.10",
     "gh-pages": "1.0.0",
     "node-sass": "4.5.3",
-    "prettier": "1.6.1"
+    "prettier": "1.7.4",
+    "gatsby": "^1.9.70",
+    "gatsby-link": "1.6.21",
+    "gatsby-plugin-canonical-urls": "1.0.8",
+    "gatsby-plugin-catch-links": "1.0.9",
+    "gatsby-plugin-feed": "1.3.9",
+    "gatsby-plugin-nprogress": "1.0.7",
+    "gatsby-plugin-react-helmet": "1.0.8",
+    "gatsby-plugin-sass": "1.0.12",
+    "gatsby-plugin-sharp": "1.6.9",
+    "gatsby-plugin-sitemap": "1.2.5",
+    "gatsby-remark-copy-linked-files": "1.5.9",
+    "gatsby-remark-prismjs": "1.2.8",
+    "gatsby-remark-responsive-image": "1.0.0-alpha13-alpha.435e0178",
+    "gatsby-source-filesystem": "1.5.5",
+    "gatsby-transformer-remark": "^1.7.17",
+    "gatsby-transformer-sharp": "1.6.10",
+    "graphql-skip-limit": "1.0.6",
+    "sharp": "0.18.4",
+    "uuid": "3.1.0",
+    "install": "0.10.1",
+    "prop-types": "15.6.0",
+    "rimraf": "2.6.2"
   }
 }

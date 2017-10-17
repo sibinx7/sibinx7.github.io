@@ -5,6 +5,7 @@ date: "2017-10-04T09:40:42.000Z"
 tags: Ubuntu
 author: Sibin Xavier 
 draft: false 
+image: "nginx-vs-apache.png"
 ---
 
 ### FFMPEG for Multmedia Process 
