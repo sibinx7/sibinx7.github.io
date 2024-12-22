@@ -1,0 +1,26 @@
+
+body{
+	padding: 0;
+}
+.fix-bg{
+	background-image: url('../background/theme-background.png');
+	background-position: 50%;
+	background-size: cover;
+	height: 100vh;
+	overflow: hidden;
+	position: relative;
+	z-index: 0;
+	background: #0f141c;
+	background-blend-mode: soft-light;
+}
+
+.main{
+	display: flex;
+	.sidebar-wrapper{
+		flex-basis: 320px;
+	}
+	.content-wrapper{
+		flex-grow: 1;
+		width: 100%;
+	}
+}

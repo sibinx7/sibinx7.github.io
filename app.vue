@@ -1,17 +1,17 @@
 <template>
-  <div>
-    <NuxtPage />
-  </div>
-  <div>
-    {{  name  }}
+  <div class="fix-bg">
+	  <div class="container">
+	    <div class="main">
+			  <div class="sidebar-wrapper">
+				  <Sidebar/>
+			  </div>
+			  <div class="content-wrapper">
+				  <NuxtPage />
+			  </div>
+		  </div>
+	  </div>
   </div>
 </template>
 <script setup>
-  import useUserStore from "./store/user";
-
-  const userStore = useUserStore();
-
-  const name = computed(() => {
-    userStore.firstName
-  })
+import Sidebar from "~/common/sidebar/sidebar.vue";
 </script>

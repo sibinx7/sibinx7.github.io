@@ -1,0 +1,43 @@
+{
+	"name": "Sibin Xavier",
+	"title": "Sibin Xavier - Senior Frontend Developer & Content Creator",
+	"bio": "I am a seasoned Frontend Developer with over a decade of experience crafting and optimizing user-friendly web applications. I hold a B.Tech degree in Electronics and Communication from FISAT (2008–2012). My expertise spans modern frameworks such as React JS, Angular, and Vue JS, coupled with proficiency in backend technologies like Node.js, Express.js, and Laravel.",
+	"profession_highlights": {
+		"title": "Professional Highlights",
+		"content": [
+			{
+				"highlight": "React JS Expert",
+				"content": " 5+ years of experience mastering React with Redux, React Router, RTK, and charting libraries."
+			},
+			{
+				"highlight": "Multi-Framework Proficiency",
+				"content": "Over 4 years of expertise in Angular and 2.5 years in Vue JS, Nuxt JS"
+			},
+			{
+				"highlight": "Backend Proficiency",
+				"content": "Skilled in Node.js, Express.js, and PHP (Laravel) for efficient full-stack development."
+			},
+			{
+				"highlight": "Mentor and Trainer",
+				"content": "Successfully mentored and trained over 20 internship programs, fostering the next generation of developers."
+			},
+			{
+				"highlight": "Project Portfolio",
+				"content": "Contributed to diverse projects including Metrics, Hugo, Deltacube, and nCino, focusing on user-centric designs and seamless functionality."
+			}
+		]
+	},
+	"beyond_development": {
+		"title": "Beyond Development",
+		"content": [
+			{
+				"content": "An avid YouTuber, I create engaging content about technology, games, and hardware. My passion for learning and sharing knowledge drives me to explore cutting-edge tools and techniques, benefiting both my career and the broader tech community."
+			}
+		]
+	},
+	"contact": {
+		"phone": "8943648198",
+		"email": "sibinx7@gmail.com",
+		"location": "Ernakulam, Kerala, India"
+	}
+}
