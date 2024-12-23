@@ -15,6 +15,16 @@
                 I am an experienced frontend developer with 11+ years in web development, specializing in React JS, Angular, and Vue JS. With over 6 years of expertise in React (TypeScript, MUI, Redux, SSR, Next.js, Nuxt JS) and 4+ years in Angular and Vue, I excel in creating intuitive user interfaces and optimizing performance
               </p>
             </div>
+            <div class="resume-contact">
+              <ul class="d-flex contact-button">
+                <li><a href="" class="btn btn-rounded btn-primary btn-view-work">
+                 <span> View Work</span>
+                </a></li>
+                <li><a href="" class="btn btn-rounded btn-success btn">
+                  Contact Me 
+                </a></li>
+              </ul>
+            </div>
           </div>
           <div class="col-12 col-lg-6">
             <img :src="profileImage" alt="Sibin Xavier" class="home-profile-image">
