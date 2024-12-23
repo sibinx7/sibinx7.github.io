@@ -1,5 +1,6 @@
 @use "./utilities" as *;
 @use "./fonts" as *;
+@use "./interview";
 body{
 	padding: 0;
   @extend .fira-sans-regular; 
