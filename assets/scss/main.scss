@@ -1,6 +1,12 @@
-
+@use "./utilities" as *;
+@use "./fonts" as *;
 body{
 	padding: 0;
+  @extend .fira-sans-regular; 
+}
+:root{
+  --sidebar_background: #171b22;
+  --main_container_background: #0f141c;
 }
 .fix-bg{
 	background-image: url('../background/theme-background.png');
@@ -17,10 +23,27 @@ body{
 .main{
 	display: flex;
 	.sidebar-wrapper{
-		flex-basis: 320px;
+		flex-basis: 300px;
 	}
 	.content-wrapper{
 		flex-grow: 1;
 		width: 100%;
 	}
+}
+.content-wrapper{
+  background: var(--main_container_background);
+}
+.main-sidebar-wrapper{
+  background: var(--sidebar_background);
+  height: 100vh;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  max-width: 300px;
+  width: 300px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.home-profile-image{
+  max-width: 100%;
 }

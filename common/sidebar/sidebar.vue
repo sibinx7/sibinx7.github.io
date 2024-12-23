@@ -3,13 +3,16 @@
 </script>
 
 <template>
-	<div>
+	<div class="main-sidebar-wrapper">
 		<div class="main-sidebar">
 			<div class="main-sidebar-header">
 				<div class="main-profile-section">
 					<div class="profile-image"></div>
 					<div class="profile-info-section">
-						
+						<h3 class="developer-name text-white text-center">
+              Sibin Xavier 
+            </h3>
+            <h5 class="text-center">Full Stack Developer</h5>
 					</div>
 					<div class="profile-social-buttons">
 						<ul class="social-icons">
