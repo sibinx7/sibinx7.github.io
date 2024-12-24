@@ -18,7 +18,7 @@ export default defineNuxtConfig({
   ],
   hooks: {
     'prerender:routes' ({ routes}){
-      // routes.clear()
+      routes.clear()
     }
   }, 
   modules: [
@@ -29,7 +29,7 @@ export default defineNuxtConfig({
   nitro: {
     prerender: {
       crawlLinks: true,
-      routes: ['/']
+      routes: ['/', '/interviews']
     }
   },
   app: {
