@@ -18,7 +18,7 @@ export default defineNuxtConfig({
   ],
   hooks: {
     'prerender:routes' ({ routes}){
-      routes.clear()
+//      routes.clear()
     }
   }, 
   modules: [

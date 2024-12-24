@@ -9,7 +9,9 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "predeploy": "npm run generate",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "prelocal": "npm run generate",
+    "local": "npm run preview"
   },
   "dependencies": {
     "@nuxt/content": "^2.13.4",
@@ -24,6 +26,7 @@
     "vue-router": "latest"
   },
   "devDependencies": {
+    "concurrently": "^9.1.0",
     "gh-pages": "^6.2.0",
     "sass": "^1.83.0"
   }
