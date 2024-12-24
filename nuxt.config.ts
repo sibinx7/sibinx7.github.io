@@ -19,6 +19,17 @@ export default defineNuxtConfig({
   hooks: {
     'prerender:routes' ({ routes}){
 //      routes.clear()
+    },
+    'nitro:build:public-assets': async (nuxt) => {
+      const { output: { publicDir } } = nuxt.options
+      const fs = require('fs')
+
+      try {
+        await fs.promises.writeFile(`${publicDir}/.nojekyll`, '')
+        console.log('.nojekyll file created successfully in public directory.')
+      } catch (error) {
+        console.error('Error creating .nojekyll file:', error)
+      }
     }
   }, 
   modules: [
