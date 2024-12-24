@@ -4,6 +4,11 @@ dotenv.config();
 const isProduction = process.env.NODE_ENV === "production";
 export default defineNuxtConfig({
   ssr: true,  
+  content: {
+    experimental: {
+      clientDB: true
+    }
+  },
   compatibilityDate: '2024-11-01',
   css: [
     '~/node_modules/bootstrap/scss/bootstrap.scss',

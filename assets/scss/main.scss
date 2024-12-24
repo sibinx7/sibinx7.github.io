@@ -62,6 +62,9 @@ body{
       padding: 15px 25px;
       overflow: hidden;
       border: none;
+      span{
+        position: relative;
+      }
       &.btn-view-work{
         position: relative;
         &:before{
