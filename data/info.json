@@ -1,0 +1,23 @@
+{
+	"information": "My name is <b>Sibin Xavier</b>, For the past 11 years, I have been working as a frontend developer with expertise in Angular, React, Vue, and React Native. I am passionate about continuous learning, frequently reading books, watching videos, and exploring tutorials and articles related to programming. Beyond development, I enjoy mentoring students in React, Node.js, and other web technologies, sharing my knowledge and helping them grow in their careers.",
+	"properties": [
+		{
+			"key": "Name", "value": "Sibin Xavier"
+		},
+		{
+			"key": "Nationality", "value": "Indian"
+		},
+		{
+			"key": "Phone", "value": "8943648198"
+		},
+		{
+			"key": "Email", "value": "sibinx7@gmail.com"
+		},
+		{
+			"key": "Experience", "value": "11+ years"
+		},
+		{
+			"key": "Language", "value": "English, Malayalam"
+		}
+	]
+}

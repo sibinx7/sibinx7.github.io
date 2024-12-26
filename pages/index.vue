@@ -1,5 +1,5 @@
 <template>
-  <div class="home-content">
+  <div class="home-content section-wrapper">
     <div class="home-profile-section">
       <div class="container-fluid">
         <div class="row">
@@ -34,6 +34,9 @@
     </div>
     
   </div>
+	<div class="section-wrapper">
+		<about-section/>
+	</div>
 </template>
 <script setup>
 import useProfession from '~/composable/profession';
