@@ -1,7 +1,43 @@
 {
 	"experiences": [
 		{
-
-		}
+      "position": "Senior Frontend Developer/ Mentor",
+      "start_date": "01/04/2024",
+      "end_date": false,
+      "company": "Sinergia Media Labs",
+      "company_website": "www.simelabs.com",
+      "domains":"Angular, React, Vue JS, React Native, MEAN, MERN, Laravel, Express JS",
+      "description": "Delivered data-driven applications using Angular, React, and Vue.js. Notable projects include Metrics, a data visualization tool for HR, and Hugo, a hospital booking system with video call features. Collaborated on .NET and Django backends for secure and efficient data handling."
+		}, 
+    {
+      "id": 3,
+      "position": "React Lead Developer",
+      "start_date": "01/04/2018",
+      "end_date": "31/03/2020",
+      "domains": "React JS, WebSockets, Python, Bootstrap",
+      "company": "Impress AI",
+      "company_website": "http://www.impress.ai",
+      "description": "Focused on developing chatbot management dashboards using React JS and Socket.io. Built interactive UI elements and facilitated chatbot analytics for improved performance."
+    },
+    {
+      "id": 2,
+      "position": "Frontend Developer",
+      "start_date": "01/12/2014",
+      "end_date": "31/01/2017",
+      "domains": "Bootstrap 5, Angular JS, React, Vue JS, Laravel",
+      "company": "RedPanthers",
+      "company_website": "http://www.redpanthers.com",
+      "description": "Specialized in various frontend frameworks, including React, Angular, and Vue. Worked on hybrid apps using Ionic and full-stack MEAN applications. Contributed to Ruby on Rails and Laravel projects on freelance platforms."
+    },
+    {
+      "id": 1,
+      "position": "UI Developer and Frontend Developer",
+      "start_date": "01/01/2014",
+      "end_date": "31/11/2024",
+      "domains": "Bootstrap 5, HTML, CSS, JavaScript",
+      "company": "Codeyssus Labs",
+      "company_website": "http://www.codeyssus.com",
+      "description": "Designed and developed HTML websites for Django-based products, improving UI aesthetics and user interaction."
+    }
 	]
 }

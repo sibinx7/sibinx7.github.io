@@ -1,0 +1,26 @@
+{
+  "educations": [
+    {
+      "id": 3,
+      "institute": "FISAT",
+      "course": "Electronics And Communication",
+      "course_start": "2008",
+      "course_complete": "2012",
+      "description": ""
+    },
+    {
+      "id": 2,
+      "institute": "St. Thomas HSS, Malayatoor",
+      "course": "Higher Secondary Education",
+      "course_start": "2006",
+      "course_complete": "2008"
+    },
+    {
+      "id": 1,
+      "institute": "GVHS Koovappady",
+      "course": "Higher Education", 
+      "course_start": "2005",
+      "course_complete": 2006
+    }
+  ]
+}

@@ -37,6 +37,12 @@
 	<div class="section-wrapper">
 		<about-section/>
 	</div>
+  <div class="section-wrapper">
+    <education-section/>
+  </div>
+  <div class="section-wrapper">
+    <experience-section/>
+  </div>
 </template>
 <script setup>
 import useProfession from '~/composable/profession';
