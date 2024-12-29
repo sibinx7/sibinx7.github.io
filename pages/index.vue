@@ -38,10 +38,10 @@
 		<about-section/>
 	</div>
   <div class="section-wrapper">
-    <education-section/>
+    <education-section title="Education."/>
   </div>
   <div class="section-wrapper">
-    <experience-section/>
+    <experience-section title="Experience."/>
   </div>
 </template>
 <script setup>

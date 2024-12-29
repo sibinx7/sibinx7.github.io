@@ -1,8 +1,3 @@
-.about-section{
-	.about-section-title{
-		position: relative;
-	}
-}
 .section{
 	color: #fff;
 }
@@ -14,6 +9,19 @@
 
 }
 
+.common-section{
+	.common-section-title{
+		position: relative;
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+	.common-section-title{
+		color: #fff;
+		.title{
+			color: #fff;
+		}
+	}
+}
 .title-right-line{
 	display: flex;
 	gap: 15px;

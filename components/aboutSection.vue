@@ -25,8 +25,8 @@ onMounted(() => {
 </script>
 
 <template>
-	<div class="about-section section">
-		<div class="section-title about-section-title title-right-line">
+	<div class="about-section common-section ">
+		<div class="about-section-title common-section-title title-right-line">
 			<div class="title-box">
 				<h1 class="title">
 					About me.
@@ -35,7 +35,7 @@ onMounted(() => {
 			<div class="line"></div>
 		</div>
 
-		<div v-html="aboutInfo.information">
+		<div class="about-section-content" v-html="aboutInfo.information">
 		</div>
 		<div>
 			<div class="profile-properties">
@@ -54,4 +54,21 @@ onMounted(() => {
 
 <style scoped lang="scss">
 
+.about-section-content{
+	color: #909090;
+	padding-top:20px;
+	padding-bottom: 30px;
+}
+.profile-properties{
+	padding-top:20px;
+	padding-bottom: 40px;
+}
+.property-list{
+	.p-item-content{
+		color: #909090;
+		+.p-item-content{
+			color: #fff;
+		}
+	}
+}
 </style>

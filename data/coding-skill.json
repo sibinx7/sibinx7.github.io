@@ -1,0 +1,25 @@
+{
+	"skills": [
+		{
+			"name": "HTML/CSS", "level": "79", "key": "html"
+		},
+		{
+			"name": "JavaScript", "level": "70", "javascript"
+		},
+		{
+			"name": "React", "level": "60"
+		},
+		{
+			"name": "Angular", "level": "55"
+		},
+		{
+			"name": "Vue JS", "level": "60"
+		},
+		{
+			"name": "Node JS", "level": "50"
+		},
+		{
+			"name": "Laravel", "level": "40"
+		}
+	]
+}

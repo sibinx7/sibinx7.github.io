@@ -1,6 +1,7 @@
 @use "./utilities" as *;
 @use "./fonts" as *;
-@use "./interview";
+@use "./interview" as *;
+@use "./home" as *;
 @use "./common";
 body{
 	padding: 0;
