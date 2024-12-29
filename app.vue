@@ -3,10 +3,14 @@
 	  <div class="container">
 	    <div class="main">
 			  <div class="sidebar-wrapper">
-				  <Sidebar/>
+				  <div class="sidebar-wrapper-scrollable">
+					  <Sidebar/>
+				  </div>
 			  </div>
 			  <div class="content-wrapper">
-				  <NuxtPage />
+				  <div class="content-wrapper-scrollable" data-bs-spy="scroll">
+					  <NuxtPage />
+				  </div>
 			  </div>
 		  </div>
 	  </div>
