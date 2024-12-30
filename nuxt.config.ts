@@ -14,6 +14,7 @@ export default defineNuxtConfig({
     '~/node_modules/bootstrap/scss/bootstrap.scss',
     '~/node_modules/bootstrap-icons/font/bootstrap-icons.scss',
     '~/node_modules/animate.css/animate.min.css',
+    '~/node_modules/devicon/devicon.min.css',
     '~/node_modules/prismjs/themes/prism-okaidia.css',
     '~/assets/scss/main.scss',
   ],

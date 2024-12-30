@@ -1,25 +1,70 @@
 {
 	"skills": [
 		{
-			"name": "HTML/CSS", "level": "79", "key": "html"
+			"id": 1,"name": "HTML", "level": "80", "key": "html", "icon": "devicon-html5-plain", "color": "#f36"
 		},
 		{
-			"name": "JavaScript", "level": "70", "javascript"
+			"id": 2, "name": "CSS", "level": "85", "key": "css", "icon": "devicon-css3-plain", "color": "#00cc97"
 		},
 		{
-			"name": "React", "level": "60"
+			"id": 3, "name": "JavaScript", "level": "70", "key": "javascript", "icon": "devicon-javascript-plain", "color": "#ff759c"
 		},
 		{
-			"name": "Angular", "level": "55"
+			"id": 4, "name": "TypeScript", "level": "50", "key": "typescript", "icon": "devicon-typescript-plain", "color": "#6f39fd"
 		},
 		{
-			"name": "Vue JS", "level": "60"
+			"id":5, "name": "React", "level": "60", "key": "react", "icon": "devicon-react-original", "color": "#bce70c"
 		},
 		{
-			"name": "Node JS", "level": "50"
+			"id":6, "name": "Angular", "level": "55", "key": "angular", "icon": "devicon-angular-plain", "color": "#f8313e"
 		},
 		{
-			"name": "Laravel", "level": "40"
+			"id": 7, "name": "Vue JS", "level": "60", "key": "vuejs", "icon": "devicon-vuejs-plain", "color": "#ee2492"
+		},
+		{
+			"id": 8, "name": "Node JS", "level": "50", "key":"nodejs", "icon": "devicon-nodejs-plain", "color": "#e830ee"
+		},
+		{
+			"id": 9, "name": "Laravel", "level": "40", "key": "laravel", "icon": "devicon-laravel-plain", "color": "#8224f3"
+		},
+		{
+			"id": 10, "name": "Next JS", "level": "60", "key": "nextjs", "icon": "devicon-nextjs-original-wordmark", "color": "#328afb"
+		},
+		{
+			"id": 11, "name": "Nuxt JS", "level": "60", "key": "nuxtjs", "icon": "devicon-nuxtjs-plain", "color": "#15e3a8"
+		},
+		{
+			"id": 12, "name": "Bootstrap", "level": "90", "key": "bootstrap", "icon": "devicon-bootstrap-plain", "color": "#14cc27"
+		},
+		{
+			"id": 13,"name": "Express JS", "level": "50", "key": "express", "icon": "devicon-express-original", "color": "#ea5c2a"
+		},
+		{
+			"id": 14, "name": "Git", "level": "50", "key": "git", "icon": "devicon-git-plain", "color": "#f97979"
+		},
+		{
+			"id": 15, "name": "PostgreSQL", "level": "40", "key": "postgresql", "icon": "devicon-postgresql-plain", "color": "#a943f4"
+		},
+		{
+			"id": 16, "name": "MySQL", "level": "40", "key": "mysql", "icon": "devicon-mysql-original", "color": "#856ded"
+		},
+		{
+			"id": 17, "name": "MongoDB", "level": "40", "key": "mongodb", "icon": "devicon-mongodb-plain", "color": "#01c9da"
+		},
+		{
+			"id": 18, "name": "Redux", "level": "70", "key": "redux", "icon": "devicon-redux-original", "color": "#15cc9d"
+		},
+		{
+			"id": 19, "name": "RxJS", "level": "50", "key": "rxjs", "icon": "devicon-rxjs-plain", "color": "#06af4b"
+		},
+		{
+			"id": 20, "name": "SCSS", "level": "50", "key": "scss", "icon": "devicon-sass-original", "color": "#65e84a"
+		},
+		{
+			"id": 21, "name": "TailWind", "level": "50", "key": "tailwind", "icon": "devicon-tailwindcss-original", "color": "#77eb0a"
+		},
+		{
+			"id": 22, "name": "Swagger", "level": "50", "key": "swagger","icon": "devicon-swagger-plain", "color": "#eff92a"
 		}
 	]
 }

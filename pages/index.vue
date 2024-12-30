@@ -43,6 +43,9 @@
   <div class="section-wrapper">
     <experience-section title="Experience."/>
   </div>
+  <div class="section-wrapper">
+    <coding-skill/>
+  </div>
 </template>
 <script setup>
 import useProfession from '~/composable/profession';
