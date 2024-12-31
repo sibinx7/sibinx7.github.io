@@ -2,15 +2,17 @@
   <div class="home-content section-wrapper">
     <div class="home-profile-section">
       <div class="container-fluid">
-        <div class="row">
+        <div class="row profile-content-image">
           <div class="col-12 col-lg-6">
-            <div class="main-heading">
-              <h1 class="text-white">Sibin Xavier</h1>
-            </div>
-            <div class="profession-rolls">
-              <h4 class="text-white">{{  profession  }}</h4>
-            </div>
-            <div class="resume-description">
+						<div class="main-professional-section mb-4">
+							<div class="main-heading">
+								<h1 class="text-white">Sibin Xavier</h1>
+							</div>
+							<div class="profession-rolls">
+								<h4 class="role-title">{{  profession  }}</h4>
+							</div>
+						</div>
+            <div class="resume-description mb-5">
               <p class="mb-0 text-white">
                 I am an experienced frontend developer with 11+ years in web development, specializing in React JS, Angular, and Vue JS. With over 6 years of expertise in React (TypeScript, MUI, Redux, SSR, Next.js, Nuxt JS) and 4+ years in Angular and Vue, I excel in creating intuitive user interfaces and optimizing performance
               </p>

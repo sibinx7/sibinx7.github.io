@@ -1,5 +1,5 @@
 <script setup lang="ts">
-
+import profileImage from "../../assets/profile/sibin.jpg";
 </script>
 
 <template>
@@ -7,7 +7,11 @@
 		<div class="main-sidebar">
 			<div class="main-sidebar-header">
 				<div class="main-profile-section">
-					<div class="profile-image"></div>
+					<div class="profile-image">
+						<div class="profile-image-inner mb-4">
+							<img :src="profileImage" alt="Sibin Xavier" class="img-fluid rounded-4">
+						</div>
+					</div>
 					<div class="profile-info-section">
 						<h3 class="developer-name text-white text-center">
               Sibin Xavier 
@@ -51,7 +55,7 @@
 						<span class="bi bi-building"></span>
 						<span>Services</span>
 					</a></div>
-					<div class="list-group-item"><a href="">
+					<div class="list-group-item"><a href="/interviews">
 						<span class="bi bi-journals"></span>
 						<span>Blog</span>
 					</a></div>
@@ -70,6 +74,8 @@
 	.list-group{
 		background-color: transparent;
 		border: none;
+		--bs-list-group-item-padding-y: 10px;
+		--bs-list-group-item-padding-x: 20px;
 		.list-group-item{
 			border: none;
 			border-radius: 0;
