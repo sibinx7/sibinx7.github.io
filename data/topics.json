@@ -1,0 +1,100 @@
+{
+	"topics": [
+		{
+			"id": 1,
+			"name": "JavaScript",
+			"icon": "devicon-javascript-plain",
+			"type": "language",
+			"link": "javascript",
+			"color": "#00cc97"
+		},
+		{
+			"id": 2,
+			"name": "TypeScript",
+			"icon": "devicon-typescript-plain",
+			"type": "language",
+			"link": "",
+			"color": "#f8313e"
+		},
+		{
+			"id": 3,
+			"name": "React",
+			"type": "framework",
+			"icon": "devicon-react-original",
+			"link":"",
+			"color": "#8224f3"
+		},
+		{
+			"id": 4,
+			"name": "Vue JS",
+			"type": "framework",
+			"icon": "devicon-vuejs-plain",
+			"link": "",
+			"color": "#15e3a8"
+		},
+		{
+			"id": 5,
+			"name": "Angular",
+			"type": "framework",
+			"icon": "devicon-angular-plain",
+			"link": "",
+			"color": "#856ded"
+		},
+		{
+			"id": 6,
+			"name": "HTML",
+			"type": "language",
+			"icon": "devicon-html5-plain",
+			"link": "",
+			"color": "#65e84a"
+		},
+		{
+			"id": 7,
+			"name": "CSS",
+			"type": "language",
+			"icon": "devicon-css3-plain",
+			"link": "",
+			"color": "#f97979"
+		},
+		{
+			"id": 8,
+			"name": "Bootstrap",
+			"type": "framework",
+			"icon": "devicon-bootstrap-plain",
+			"link": "",
+			"color": "#06af4b"
+		},
+		{
+			"id": 9,
+			"name": "SASS/SCSS",
+			"type": "language",
+			"icon": "devicon-sass-original",
+			"link": "",
+			"color": "#f8313e"
+		},
+		{
+			"id": 10,
+			"name": "Database",
+			"type": "database",
+			"icon": "devicon-azuresqldatabase-plain",
+			"link": "",
+			"color": "#65e84a"
+		},
+		{
+			"id": 11,
+			"name": "Node.js",
+			"type": "sdk",
+			"icon": "devicon-nodejs-plain",
+			"link": "",
+			"color": "#ff759c"
+		},
+		{
+			"id": 12,
+			"name": "Express JS",
+			"type": "framework",
+			"icon": "devicon-express-original",
+			"link": "",
+			"color": "#01c9da"
+		}
+	]
+}
