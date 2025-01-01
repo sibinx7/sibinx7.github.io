@@ -1,1 +1,0 @@
-import{_ as s,c as t,a as r,o as a}from"./BN9PNuzF.js";const c={},n={class:"interview-section"};function o(i,e){return a(),t("div",n,e[0]||(e[0]=[r("a",{href:"/interviews/javascript"},"Javascript",-1)]))}const d=s(c,[["render",o]]);export{d as default};
