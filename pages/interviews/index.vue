@@ -110,7 +110,7 @@ const technologyStacks = reactive([
 <template>
 	<div class="interview-section">
     <div v-for="stack in technologyStacks" :key="stack.id" class="interview-section-list">
-      <a :href="`interviews/${stack.link}/`" class="interview-section-link" :style="{'--stack-icon-color': stack.color}">
+      <a :href="`/interviews/${stack.link}/`" class="interview-section-link" :style="{'--stack-icon-color': stack.color}">
         <div class="interview-section-content">
           <div class="language-icon" >
             <span :class="stack.icon" ></span>
