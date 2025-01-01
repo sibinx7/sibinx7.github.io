@@ -47,5 +47,8 @@ export default defineNuxtConfig({
   },
   app: {
     buildAssetsDir: `${isProduction ? 'assets' : '_nuxt'}`,
+    head: {
+      title: 'Sibin Xavier | Experienced Full-Stack Developer | React, Angular, Vue.js | Nuxt JS, Next JS, Middleman | React Native | Node.js, Express JS |Laravel | MongoDB/MySQL, Sequelize js | Passionate Mentor | YouTuber | Blogger'
+    }
   }
 })
