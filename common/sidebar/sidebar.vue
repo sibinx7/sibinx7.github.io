@@ -38,20 +38,20 @@ import profileImage from "../../assets/profile/sibin.jpg";
 			<div class="main-sidebar-menus">
 				<div class="list-group">
 					<div class="list-group-item">
-						<a href="">
+						<a href="/">
 							<span class="bi bi-house-door"></span>
 							<span>Home</span>
 						</a>
 					</div>
-					<div class="list-group-item"><a href="">
+					<div class="list-group-item"><a href="/about">
 						<span class="bi bi-person"></span>
 						<span>About</span>
 					</a></div>
-					<div class="list-group-item"><a href="">
+					<div class="list-group-item"><a href="/download/resume">
 						<span class="bi bi-person-vcard"></span>
 						<span>Resume</span>
 					</a></div>
-					<div class="list-group-item"><a href="">
+					<div class="list-group-item"><a href="/services">
 						<span class="bi bi-building"></span>
 						<span>Services</span>
 					</a></div>
