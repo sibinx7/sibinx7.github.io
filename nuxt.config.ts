@@ -5,7 +5,7 @@ const isProduction = process.env.NODE_ENV === "production";
 export default defineNuxtConfig({
   ssr: true,  
   content: {
-    documentDriven: false,
+    documentDriven: true,
     experimental: {
       clientDB: true
     }
@@ -51,5 +51,5 @@ export default defineNuxtConfig({
     head: {
       title: 'Sibin Xavier | Experienced Full-Stack Developer | React, Angular, Vue.js | Nuxt JS, Next JS, Middleman | React Native | Node.js, Express JS |Laravel | MongoDB/MySQL, Sequelize js | Passionate Mentor | YouTuber | Blogger'
     }
-  }
+  },
 })

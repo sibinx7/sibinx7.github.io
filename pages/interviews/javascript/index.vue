@@ -18,11 +18,14 @@ const route = useRoute();
 const files = import.meta.glob('./doc/*.vue', { eager: true });
 const processFiles = async () => {
   const links: Array<any> = [];
-
+  console.log('Process files');
   try{
-    const contentsData  = await useAsyncData('markdown',  () => queryContent().find());
-
+    const contentsData  = await useAsyncData('markdown',  () => queryContent('/interviews/javascript').find());
+    console.log(contentsData);
+    console.log('API calles');
     const dataContent: any = contentsData?.data?.value;
+    console.log('Data content')
+    console.log(dataContent);
     for(const file in files) {
       if (file.includes('_')) return; // Exclude files like '_files'
       const fileName = file.replace(/^\.\/?/i, '')   .replace(/\/index(\.vue)?$/, '').replace('.vue', '');
