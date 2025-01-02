@@ -5,7 +5,7 @@ const isProduction = process.env.NODE_ENV === "production";
 export default defineNuxtConfig({
   ssr: true,  
   content: {
-    documentDriven: true,
+    documentDriven: false,
     experimental: {
       clientDB: true
     }

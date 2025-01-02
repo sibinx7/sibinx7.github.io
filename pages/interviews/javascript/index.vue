@@ -42,7 +42,7 @@ const processFiles = async () => {
       });
     }
     listOfFiles.value = links;
-    console.log(links);
+    // console.log(links);
   }catch(e){
     console.log('Error')
     console.log(e)
