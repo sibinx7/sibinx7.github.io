@@ -1,0 +1,1 @@
+import{e as r,r as o,q as u,g as c,o as a,c as s,a as t,F as l,h as i,u as _,t as d}from"./DcT91cjs.js";const f=["href"],x=r({__name:"index",setup(p){const n=o([]);return u(),c(async()=>{}),(m,h)=>(a(),s("div",null,[t("ul",null,[(a(!0),s(l,null,i(_(n),e=>(a(),s("li",{key:e.id},[t("a",{href:e.path},d(e.name),9,f)]))),128))])]))}});export{x as default};
