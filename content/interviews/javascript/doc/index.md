@@ -1,7 +1,6 @@
+---
+title: "Javascript index"
 
-```javascript
-$(document).click(() => {
-// code 
-})
+---
 
-```
+This is something 

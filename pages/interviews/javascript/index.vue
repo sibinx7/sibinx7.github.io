@@ -14,56 +14,45 @@ import fs from "fs";
 import path from "path";
 import matter from 'gray-matter';
 const listOfFiles = ref<Array<any>>([]);
-onMounted(async () => {
-	const links: Array<any> = [];
-	const files = import.meta.glob('./doc/*.vue', { eager: true });
-  const readMarkdownFiles: any = import.meta.glob('/content/interviews/javascript/doc/*.*', { eager: false });
-	try{
+const route = useRoute();
+const files = import.meta.glob('./doc/*.vue', { eager: true });
+const processFiles = async () => {
+  const links: Array<any> = [];
 
-		for(const file in files) {
-      console.log('Looping files')
+  try{
+    const contentsData  = await useAsyncData('markdown',  () => queryContent().find());
 
-			if (file.includes('_')) return; // Exclude files like '_files'
-
-			const fileName = file.replace(/^\.\/?/i, '')   .replace(/\/index(\.vue)?$/, '').replace('.vue', '');
-			const formattedName = fileName.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase());
-
-
-
-
-      console.log('***')
-      const selectedFiles: any = Object.keys(readMarkdownFiles).find((mFile) => {
-        console.log(mFile);
-        const existingVueFile = file ? ((file || '')?.split('/')?.pop().replace('.vue', '.md')) : null;
-        return existingVueFile && mFile?.includes(existingVueFile);
+    const dataContent: any = contentsData?.data?.value;
+    for(const file in files) {
+      if (file.includes('_')) return; // Exclude files like '_files'
+      const fileName = file.replace(/^\.\/?/i, '')   .replace(/\/index(\.vue)?$/, '').replace('.vue', '');
+      const formattedName = fileName.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase());
+      const filePath = `/interviews/javascript/${fileName.replaceAll(/\/index/g, '')}`
+      const selectedMD = dataContent?.find((item: any) => {
+        return item._path === filePath
       });
+      const selectedMDJSON = JSON.stringify(selectedMD);
+      const selectedMDObject = JSON.parse(selectedMDJSON || '{}');
 
-      const markdownFilePromise = await readMarkdownFiles[selectedFiles]();
-      debugger
-      if(markdownFilePromise){
-        debugger
-        const cleanedMarkdownFiles = markdownFilePromise?.replace(/\/\/# sourceMappingURL=.*?$/gm, '');
-        const { data, content} =  matter(cleanedMarkdownFiles);
-        console.log('This is my content')
-        console.log(data)
-      }
+      links.push({
+        id: Date.now(),
+        name: selectedMDObject?.title || formattedName, // Convert 'basic-javascript' to 'Basic Javascript'
+        title: selectedMDObject?.title,
+        path: filePath,
+      });
+    }
+    listOfFiles.value = links;
+    console.log(links);
+  }catch(e){
+    console.log('Error')
+    console.log(e)
+  }
+}
 
-			links.push({
-				id: Date.now(),
-				name: formattedName, // Convert 'basic-javascript' to 'Basic Javascript'
-				path: `/interviews/javascript/${fileName.replaceAll(/\/index/g, '')}`,
-			});
-		}
-		console.log('Links')
-		console.log(links)
-		listOfFiles.value = links;
-	}catch(e){
-		console.log('Error')
-		console.log(e)
-	}
-
-
-
-
+onServerPrefetch(async () => {
+  processFiles();
+})
+onMounted(async () => {
+  processFiles();
 })
 </script>
