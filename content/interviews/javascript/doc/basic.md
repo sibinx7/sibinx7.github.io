@@ -1,4 +1,5 @@
 ---
-title: Hello World 
+title: "Basic"
 ---
-This is a World 
+
+# Hello World

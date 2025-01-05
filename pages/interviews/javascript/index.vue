@@ -10,17 +10,17 @@
 	</div>
 </template>
 <script setup lang="ts">
-import fs from "fs";
-import path from "path";
-import matter from 'gray-matter';
+
 const listOfFiles = ref<Array<any>>([]);
 const route = useRoute();
-const files = import.meta.glob('./doc/*.vue', { eager: true });
+
+
 const processFiles = async () => {
+	const files = import.meta.glob('./doc/*.vue', { eager: true });
   const links: Array<any> = [];
   console.log('Process files');
   try{
-    const contentsData  = await useAsyncData('markdown',  () => queryContent('/interviews/javascript').find());
+    const contentsData  = await useAsyncData('markdown',  () => queryContent('/interviews').find());
     console.log(contentsData);
     console.log('API calles');
     const dataContent: any = contentsData?.data?.value;
@@ -52,10 +52,11 @@ const processFiles = async () => {
   }
 }
 
-onServerPrefetch(async () => {
+onServerPrefetch( () => {
   processFiles();
 })
-onMounted(async () => {
+
+onMounted( () => {
   processFiles();
 })
 </script>

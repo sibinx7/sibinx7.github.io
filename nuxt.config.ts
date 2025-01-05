@@ -5,7 +5,7 @@ const isProduction = process.env.NODE_ENV === "production";
 export default defineNuxtConfig({
   ssr: true,  
   content: {
-    documentDriven: true,
+    documentDriven: false,
     experimental: {
       clientDB: true
     }
@@ -21,7 +21,7 @@ export default defineNuxtConfig({
   ],
   hooks: {
     'prerender:routes' ({ routes}){
-//      routes.clear()
+     routes.clear()
     },
     'nitro:build:public-assets': async (nuxt) => {
       const { output: { publicDir } } = nuxt.options
@@ -43,7 +43,7 @@ export default defineNuxtConfig({
   nitro: {
     prerender: {
       crawlLinks: true,
-      routes: ['/', '/interviews']
+      routes: ['/', '/interviews',  '/about', '/services'],
     }
   },
   app: {
