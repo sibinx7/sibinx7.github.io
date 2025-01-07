@@ -66,3 +66,26 @@
 		}
 	}
 }
+
+.nuxt-markdown-content{
+	table{
+		width: 100%;
+		thead{
+			tr{
+				th{
+					background: #444;
+					padding: 10px;
+					border: 1px solid #434343;
+				}
+			}
+		}
+		tbody{
+			tr{
+				td{
+					border: 1px solid #333;
+					padding: 10px;
+				}
+			}
+		}
+	}
+}
