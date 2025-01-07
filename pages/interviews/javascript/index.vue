@@ -20,7 +20,7 @@ const processFiles = async () => {
   const links: Array<any> = [];
   console.log('Process files');
   try{
-    const contentsData  = await useAsyncData('markdown',  () => queryContent('/interviews').find());
+    const contentsData  = await useAsyncData('markdown',  () => queryContent('/').find());
     console.log(contentsData);
     console.log('API calles');
     const dataContent: any = contentsData?.data?.value;
@@ -51,12 +51,10 @@ const processFiles = async () => {
     console.log(e)
   }
 }
-
+processFiles();
 onServerPrefetch( () => {
   processFiles();
 })
 
-onMounted( () => {
-  processFiles();
-})
+
 </script>
