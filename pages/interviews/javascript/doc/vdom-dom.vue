@@ -8,5 +8,9 @@
 	</div>
 </template>
 <script setup lang="ts">
+  onMounted(() => {
+    //
+    console.log('VDOM-DOM mounted.');
+  })
 
 </script>

@@ -16,11 +16,16 @@ const route = useRoute();
 
 
 const processFiles = async () => {
+  console.log('Start processing files before import.meta');
 	const files = import.meta.glob('./doc/*.vue', { eager: true });
   const links: Array<any> = [];
   console.log('Process files');
   try{
-    const contentsData  = await useAsyncData('markdown',  () => queryContent('/').find());
+    console.log('Inside process files');
+    const contentsData  = await useAsyncData('markdown',  () => {
+      console.log('Inside markdown useAsyncData')
+      return queryContent('/').find()
+    }, { server: true });
     console.log(contentsData);
     console.log('API calles');
     const dataContent: any = contentsData?.data?.value;
@@ -51,9 +56,17 @@ const processFiles = async () => {
     console.log(e)
   }
 }
-processFiles();
-onServerPrefetch( () => {
+try{
   processFiles();
+}catch(e){
+
+}
+
+onMounted(async () => {
+  await processFiles();
+})
+onServerPrefetch( async () => {
+  await processFiles();
 })
 
 
