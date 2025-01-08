@@ -73,4 +73,9 @@ real DOM. It also update in batch and not every single changes.
 - Improved performance: Reduced costly DOM manipulations by batching updates 
 - Simplified Development: Developers focus on component logic, leaving optimization to React 
 - Consistent Rendering: Abstract browser specific rendering, ensuring uniform performance 
-- Better user experience: Faster updates lead to smoother interaction and enhance user satisfaction
+- Better user experience: Faster updates lead to smoother interaction and enhance user satisfaction.
+
+#### Disadvantages of Virtual DOM 
+- Memory overhead: Maintaining Virtual DOM tree consumes additional memory.
+- Not always Optimal: For very simple application, like Static Sites, Virtual DOM may introduce unnecessary overload
+
