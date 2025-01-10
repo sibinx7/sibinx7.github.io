@@ -1,6 +1,16 @@
 <script setup lang="ts">
 const props = defineProps(['links']);
-const listOfFiles = ref(props.links);
+const { data: listOfFiles } = await useAsyncData('links', () => {
+	return props.links;
+});
+
+onMounted(() => {
+
+});
+
+onServerPrefetch(() => {
+	// listOfFiles.value = props.links;
+})
 </script>
 
 <template>

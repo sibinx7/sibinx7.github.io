@@ -7,7 +7,6 @@ const breadcrumbRoutes = computed(() => {
 	const routes = route.fullPath.substring(1).split('/');
 	return routes.map((route: string) => {
 		if(route) {
-			console.log(routes)
 			fullPath = `${fullPath}/${route}`;
 			return {
 				...(router.resolve(fullPath)),
