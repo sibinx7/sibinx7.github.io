@@ -1,15 +1,11 @@
 <template>
 	<div>
-		<ul>
-			<li v-for="link in listOfFiles" :key="link.id">
-				<a :href="link.path">
-					{{ link.name }}
-				</a>
-			</li>
-		</ul>
+		<topics :links="listOfFiles"/>
 	</div>
 </template>
 <script setup lang="ts">
+
+import Topics from "~/common/topics/topics.vue";
 
 const listOfFiles = ref<Array<any>>([]);
 const route = useRoute();
