@@ -1,6 +1,8 @@
 <script setup lang="ts">
+import type {TopicLink} from "~/types/common";
+
 const props = defineProps(['links']);
-const { data: listOfFiles } = await useAsyncData('links', () => {
+const { data: listOfFiles } = await useAsyncData<Array<TopicLink>>('links', () => {
 	return props.links;
 });
 
@@ -17,8 +19,8 @@ onServerPrefetch(() => {
 	<div class="list-group-topic">
 		<ul class="list-group">
 			<li v-for="link in listOfFiles" :key="link.id" class="list-group-item">
-				<a :href="link.path">
-					{{ link.name }}
+				<a :href="link?.path">
+					{{ link?.name }}
 				</a>
 			</li>
 		</ul>

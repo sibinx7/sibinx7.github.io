@@ -55,7 +55,7 @@ import profileImage from "../../assets/profile/sibin.jpg";
 						<span class="bi bi-building"></span>
 						<span>Services</span>
 					</a></div>
-					<div class="list-group-item"><a href="/interviews">
+					<div class="list-group-item"><a href="/images/interviews">
 						<span class="bi bi-journals"></span>
 						<span>Blog</span>
 					</a></div>

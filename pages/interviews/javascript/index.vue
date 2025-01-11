@@ -6,6 +6,7 @@
 <script setup lang="ts">
 
 import Topics from "~/common/topics/topics.vue";
+import type {TopicLink} from "~/types/common";
 
 const listOfFiles = ref<Array<any>>([]);
 const route = useRoute();
@@ -14,7 +15,7 @@ const route = useRoute();
 const processFiles = async () => {
   console.log('Start processing files before import.meta');
 	const files = import.meta.glob('./doc/*.vue', { eager: true });
-  const links: Array<any> = [];
+  const links: Array<TopicLink> = [];
   try{
     const contentsData  = await useAsyncData('markdown',  () => {
       console.log('Inside markdown useAsyncData')

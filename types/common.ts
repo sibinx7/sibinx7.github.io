@@ -6,3 +6,11 @@ export type TechnologyStack = {
 	link: string;     // URL or link (can be empty)
 	color: string;    // Hex color code for the technology
 };
+
+
+export type TopicLink = {
+	id: number;
+	name: string;
+	title: string;
+	path: string;
+}

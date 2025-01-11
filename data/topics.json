@@ -85,7 +85,7 @@
 			"name": "Node.js",
 			"type": "sdk",
 			"icon": "devicon-nodejs-plain",
-			"link": "",
+			"link": "nodejs",
 			"color": "#ff759c"
 		},
 		{
