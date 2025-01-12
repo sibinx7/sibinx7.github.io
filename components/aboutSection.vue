@@ -13,7 +13,12 @@ const callAboutApi = async () => {
 const infoProperties = computed(() => {
 	let properties: Array<any> = [];
 	if(aboutInfo.value?.properties){
-		properties = aboutInfo.value.properties
+		properties = aboutInfo.value.properties.map((item: any) => {
+			if(item.key  === 'Experience'){
+				item.value = (new Date()).getFullYear() - item.value;
+			}
+			return item;
+		})
 	}
 	return properties;
 })
