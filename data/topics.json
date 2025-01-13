@@ -13,7 +13,7 @@
 			"name": "TypeScript",
 			"icon": "devicon-typescript-plain",
 			"type": "language",
-			"link": "",
+			"link": "typescript",
 			"color": "#f8313e"
 		},
 		{
@@ -29,7 +29,7 @@
 			"name": "Vue JS",
 			"type": "framework",
 			"icon": "devicon-vuejs-plain",
-			"link": "",
+			"link": "vuejs",
 			"color": "#15e3a8"
 		},
 		{
@@ -37,7 +37,7 @@
 			"name": "Angular",
 			"type": "framework",
 			"icon": "devicon-angular-plain",
-			"link": "",
+			"link": "angular",
 			"color": "#856ded"
 		},
 		{
@@ -85,7 +85,7 @@
 			"name": "Node.js",
 			"type": "sdk",
 			"icon": "devicon-nodejs-plain",
-			"link": "",
+			"link": "nodejs",
 			"color": "#ff759c"
 		},
 		{

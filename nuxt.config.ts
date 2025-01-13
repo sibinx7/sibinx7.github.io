@@ -8,7 +8,10 @@ export default defineNuxtConfig({
     documentDriven: false,
     experimental: {
       clientDB: true
-    }
+    },
+    ignores: [
+      'images'
+    ]
   },
   compatibilityDate: '2024-11-01',
   css: [
@@ -37,13 +40,18 @@ export default defineNuxtConfig({
   }, 
   modules: [
     '@pinia/nuxt',
-    '@nuxt/content'
+    '@nuxt/content',
+    '@nuxt/image',
   ],
+  image: {
+    provider: 'none'
+  },
   devtools: { enabled: true },
   nitro: {
     prerender: {
       crawlLinks: true,
       routes: ['/', '/interviews',  '/about', '/services'],
+      failOnError: false,
     }
   },
   app: {

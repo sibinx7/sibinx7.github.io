@@ -1,15 +1,12 @@
 <template>
 	<div>
-		<ul>
-			<li v-for="link in listOfFiles" :key="link.id">
-				<a :href="link.path">
-					{{ link.name }}
-				</a>
-			</li>
-		</ul>
+		<topics :links="asyncFileList"/>
 	</div>
 </template>
 <script setup lang="ts">
+
+import Topics from "~/common/topics/topics.vue";
+import type {TopicLink} from "~/types/common";
 
 const listOfFiles = ref<Array<any>>([]);
 const route = useRoute();
@@ -18,19 +15,13 @@ const route = useRoute();
 const processFiles = async () => {
   console.log('Start processing files before import.meta');
 	const files = import.meta.glob('./doc/*.vue', { eager: true });
-  const links: Array<any> = [];
-  console.log('Process files');
+  const links: Array<TopicLink> = [];
   try{
-    console.log('Inside process files');
     const contentsData  = await useAsyncData('markdown',  () => {
       console.log('Inside markdown useAsyncData')
       return queryContent('/').find()
     }, { server: true });
-    console.log(contentsData);
-    console.log('API calles');
     const dataContent: any = contentsData?.data?.value;
-    console.log('Data content')
-    console.log(dataContent);
     for(const file in files) {
       if (file.includes('_')) return; // Exclude files like '_files'
       const fileName = file.replace(/^\.\/?/i, '')   .replace(/\/index(\.vue)?$/, '').replace('.vue', '');
@@ -56,17 +47,18 @@ const processFiles = async () => {
     console.log(e)
   }
 }
-try{
-  processFiles();
-}catch(e){
 
-}
+const { data: asyncFileList } =  await useAsyncData('process', async () => {
+	await processFiles();
+	return listOfFiles.value;
+});
+
 
 onMounted(async () => {
-  await processFiles();
+  // await processFiles();
 })
 onServerPrefetch( async () => {
-  await processFiles();
+  // await processFiles();
 })
 
 
