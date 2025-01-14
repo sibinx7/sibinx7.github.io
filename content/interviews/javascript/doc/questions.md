@@ -171,3 +171,49 @@ true
 true
 ```
 ___ 
+
+
+```typescript
+var retry= 0;
+let isExist = false;
+function containsValue(obj, targetValue) {
+	// your logic goes here
+  retry++;  
+  if(isExist){
+  	return 
+  }
+ 
+  if(typeof obj !== "object"){  	
+ 		if(obj === targetValue){    	
+      isExist = true;
+    	return true      
+    } ;
+  }else{
+  	const values = Object.values(obj); 
+  	values.forEach((item, index) => {     
+    	return containsValue(item, targetValue);
+    })
+  }
+ 
+ 
+ return isExist;
+ 
+
+}
+ 
+const myObject = {
+  a: 1,
+  b: {
+    c: 2,
+    d: {
+      e: "hello",
+      f: 4
+    }
+  },
+  g: "world"
+};
+ 
+//console.log(containsValue(myObject, "hello")); // Output: true
+//console.log(containsValue(myObject, 5));     // Output: false
+console.log(containsValue(myObject, 2));   // Output: true
+```
