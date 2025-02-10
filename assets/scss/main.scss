@@ -28,6 +28,10 @@ body{
 	display: flex;
 	position: relative;
 	overflow: hidden;
+	.sidebar-toggle{
+		z-index: 102;
+		position: absolute;
+	}
 	.sidebar-wrapper{
 		max-width: 300px;
 		overflow: hidden;
@@ -44,6 +48,26 @@ body{
 			position: relative;
 			&::-webkit-scrollbar{
 				display: none;
+			}
+		}
+		@media all and (max-width: 991px){
+			width: 300px;
+			z-index: 10;
+			position: fixed;
+			left: 0;
+			top: 0;
+			margin-left: 0;
+			transition: all 0.3s ease-in-out 0.03s;
+			.profile-image{
+				.profile-image-inner{
+					.rounded-4{
+						border-radius: 0!important;
+					}
+				}
+			}
+			&.close{
+				transition: all 0.3s ease-in-out 0.03s;
+				margin-left: -300px;
 			}
 		}
 	}
@@ -126,4 +150,39 @@ body{
       }
     }
   }
+}
+
+.sidebar-toggle.open-action{
+	position: fixed;
+	color: #fff;
+	right: 15px;
+	top: 15px;
+	button{
+		color: #fff;
+		font-weight: bold;
+	}
+	&.close{
+
+	}
+}
+
+.sidebar-wrapper{
+	@media all and (max-width: 991px){
+		padding-top: 0!important;
+	}
+	&:not(.close){
+		.sidebar-toggle{
+			position: absolute;
+			right: 10px;
+			button{
+				color: #fff;
+			}
+		}
+	}
+}
+
+.resume-contact{
+	@media all and (max-width: 767px) {
+		margin-bottom: 30px;
+	}
 }
