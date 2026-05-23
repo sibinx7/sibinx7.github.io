@@ -1,12 +1,10 @@
 <template>
-  <div class="nuxt-markdown-content">
-    <ContentDoc>
-      <template #not-found>
-        <h1>Sorry! We don't find content</h1>
-      </template>
-    </ContentDoc>
-  </div>
+  <div class="common-page-render">
+		<PageRender/>
+	</div>
 </template>
 <script setup lang="ts">
+import PageRender from '~/common/content/PageRender.vue';
+
 
 </script>
