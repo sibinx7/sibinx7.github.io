@@ -95,6 +95,14 @@
 			"icon": "devicon-express-original",
 			"link": "",
 			"color": "#01c9da"
+		},
+		{
+			"id": 13,
+			"name": "Nest JS",
+			"type": "framework",
+			"icon": "devicon-nestjs-original",
+			"link": "nestjs",
+			"color": "#f8313e"
 		}
 	]
 }

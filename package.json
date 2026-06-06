@@ -14,24 +14,25 @@
     "local": "npm run preview"
   },
   "dependencies": {
-    "@nuxt/content": "^2.13.4",
-    "@nuxt/image": "^1.9.0",
-    "@pinia/nuxt": "^0.9.0",
+    "@nuxt/content": "^3.14.0",
+    "@nuxt/image": "^2.0.0",
+    "@pinia/nuxt": "^0.11.3",
     "@vueuse/core": "^12.1.0",
     "animate.css": "^4.1.1",
-    "bootstrap": "^5.3.3",
+    "better-sqlite3": "^12.10.0",
+    "bootstrap": "^5.3.8",
     "bootstrap-icons": "^1.11.3",
     "devicon": "^2.16.0",
     "gray-matter": "^4.0.3",
-    "nuxt": "^3.14.1592",
-    "pinia": "^2.3.0",
+    "nuxt": "^4.4.6",
+    "pinia": "^3.0.4",
     "prismjs": "^1.29.0",
     "vue": "latest",
     "vue-router": "latest"
   },
   "devDependencies": {
-    "concurrently": "^9.1.0",
+    "concurrently": "^9.2.1",
     "gh-pages": "^6.2.0",
-    "sass": "^1.83.0"
+    "sass": "^1.100.0"
   }
 }
