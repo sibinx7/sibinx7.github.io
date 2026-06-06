@@ -1,0 +1,1 @@
+import{_ as e}from"./7JBSF5s4.js";import{m as o,h as t,k as _,K as n}from"./DSNMGLV5.js";const r={class:"common-page-render"},s=o({__name:"questions",setup(a){return(c,m)=>(n(),t("div",r,[_(e)]))}}),p=Object.freeze(Object.defineProperty({__proto__:null,default:s},Symbol.toStringTag,{value:"Module"}));export{p as _};

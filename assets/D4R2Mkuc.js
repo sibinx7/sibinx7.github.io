@@ -1,0 +1,1 @@
+import{_ as e}from"./7JBSF5s4.js";import{m as o,H as t,h as _,k as n,K as r}from"./DSNMGLV5.js";const a={class:"common-page-render"},s=o({__name:"vdom-dom",setup(c){return t(()=>{console.log("VDOM-DOM mounted.")}),(m,l)=>(r(),_("div",a,[n(e)]))}}),i=Object.freeze(Object.defineProperty({__proto__:null,default:s},Symbol.toStringTag,{value:"Module"}));export{i as _};
