@@ -1,11 +1,29 @@
 {
 	"experiences": [
+    {
+      "position": "React Tech Lead/ AI Developer",
+      "start_date": "02/06/2025",
+      "end_date": false,
+      "company": "Experion Global",
+      "company_website": "https://experionglobal.com/",
+      "domains":"React JS",
+      "description": "Delivered high-performance, full-stack enterprise applications by architecting decoupled head-less systems using Next.js, Vue.js, and React. Notable projects include Dental Dynamic, a high-concurrency doctor and patient online booking portal integrated with a robust PHP backend, and AlcheDOC, a Python and AI-driven document analysis platform featuring intelligent PDF parsing, Retrieval-Augmented Generation (RAG) workflows, and real-time interactive vector search analytics. Collaborated across Python, PHP, and Node.js backend layers to design asynchronous event-driven pipelines, optimize database transaction locks, and guarantee enterprise-grade data orchestration."
+		},
+    {
+      "position": "Senior Frontend Developer/ AI Developer",
+      "start_date": "01/02/2025",
+      "end_date": "01/06/2025",
+      "company": "PITS",
+      "company_website": "https://www.pitsolutions.com/",
+      "domains":"Vue JS, React JS, AI",
+      "description": "Delivered high-performance, full-stack enterprise applications by architecting decoupled head-less systems using Next.js, Vue.js, and React. Notable projects include Dental Dynamic, a high-concurrency doctor and patient online booking portal integrated with a robust PHP backend, and AlcheDOC, a Python and AI-driven document analysis platform featuring intelligent PDF parsing, Retrieval-Augmented Generation (RAG) workflows, and real-time interactive vector search analytics. Collaborated across Python, PHP, and Node.js backend layers to design asynchronous event-driven pipelines, optimize database transaction locks, and guarantee enterprise-grade data orchestration."
+		},
 		{
       "position": "Senior Frontend Developer/ Mentor",
-      "start_date": "01/04/2024",
-      "end_date": false,
+      "start_date": "01/04/2020",
+      "end_date": "31/01/2025",
       "company": "Sinergia Media Labs",
-      "company_website": "www.simelabs.com",
+      "company_website": "https://www.simelabs.com",
       "domains":"Angular, React, Vue JS, React Native, MEAN, MERN, Laravel, Express JS",
       "description": "Delivered data-driven applications using Angular, React, and Vue.js. Notable projects include Metrics, a data visualization tool for HR, and Hugo, a hospital booking system with video call features. Collaborated on .NET and Django backends for secure and efficient data handling."
 		}, 
