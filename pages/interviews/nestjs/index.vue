@@ -26,7 +26,7 @@ const processFiles = async () => {
 			if (file.includes('_')) return; // Exclude files like '_files'
 			const fileName = file.replace(/^\.\/?/i, '')   .replace(/\/index(\.vue)?$/, '').replace('.vue', '');
 			const formattedName = fileName.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase());
-			const filePath = `/interviews/nestsjs/${fileName.replaceAll(/\/index/g, '')}`
+			const filePath = `/interviews/nestjs/${fileName.replaceAll(/\/index/g, '')}`
 			const selectedMD = dataContent?.find((item: any) => {
 				return item._path === filePath
 			});

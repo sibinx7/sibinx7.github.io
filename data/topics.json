@@ -98,7 +98,7 @@
 		},
 		{
 			"id": 13,
-			"name": "Next JS",
+			"name": "Nest JS",
 			"type": "framework",
 			"icon": "devicon-nestjs-original",
 			"link": "nestjs",
