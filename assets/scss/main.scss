@@ -29,8 +29,11 @@ body{
 	position: relative;
 	overflow: hidden;
 	.sidebar-toggle{
-		z-index: 102;
-		position: absolute;
+		display: none;
+		@media all and (max-width: 991px){
+			z-index: 102;
+			position: absolute;
+		}
 	}
 	.sidebar-wrapper{
 		max-width: 300px;
