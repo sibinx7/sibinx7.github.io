@@ -1,0 +1,1 @@
+import{_ as e}from"./BF1JhslO.js";import{m as o,K as t,h as _,k as r}from"./C5Oa7K5k.js";const a={class:"common-page-render"},n=o({__name:"basic",setup(c){return(s,m)=>(t(),_("div",a,[r(e)]))}}),p=Object.freeze(Object.defineProperty({__proto__:null,default:n},Symbol.toStringTag,{value:"Module"}));export{p as _};

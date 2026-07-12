@@ -1,0 +1,1 @@
+import{b as o,h as t,e as n,K as s}from"./C5Oa7K5k.js";const c={},r={class:"common-content section-wrapper"};function a(l,e){return s(),t("div",r,[...e[0]||(e[0]=[n("h1",null,"Hello",-1)])])}const d=o(c,[["render",a]]);export{d as default};
