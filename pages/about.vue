@@ -1,3 +1,7 @@
+<script setup lang="ts">
+</script>
 <template>
-  <h1>About page content</h1>
+  <div class="common-content section-wrapper">
+    <h1>Hello</h1>
+  </div>
 </template>
