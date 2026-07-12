@@ -1,0 +1,1 @@
+import{b as r,K as n,h as o,R as s}from"./Bvx-f70g.js";const t={};function a(e,c){return n(),o("strong",null,[s(e.$slots,"default")])}const _=Object.assign(r(t,[["render",a]]),{__name:"ProseStrong"});export{_ as default};

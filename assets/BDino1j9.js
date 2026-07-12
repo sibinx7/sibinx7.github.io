@@ -1,0 +1,1 @@
+import{_ as e}from"./Drw_Vc9j.js";import{m as o,h as t,k as _,K as n}from"./Bvx-f70g.js";const r={class:"common-page-render"},a=o({__name:"optimization",setup(c){return(s,m)=>(n(),t("div",r,[_(e)]))}}),l=Object.freeze(Object.defineProperty({__proto__:null,default:a},Symbol.toStringTag,{value:"Module"}));export{l as _};
