@@ -103,6 +103,14 @@
 			"icon": "devicon-nestjs-original",
 			"link": "nestjs",
 			"color": "#f8313e"
+		},
+		{
+			"id": 14,
+			"name": "Prisma",
+			"type": "framework",
+			"icon": "devicon-prisma-plain",
+			"link": "prisma",
+			"color": "#00adff"
 		}
 	]
 }
