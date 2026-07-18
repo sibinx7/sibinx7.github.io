@@ -1,1 +1,0 @@
-import{_ as s,o,c as r,K as n}from"./CwMY-vcA.js";const t={};function c(e,a){return o(),r("li",null,[n(e.$slots,"default")])}const _=Object.assign(s(t,[["render",c]]),{__name:"ProseLi"});export{_ as default};

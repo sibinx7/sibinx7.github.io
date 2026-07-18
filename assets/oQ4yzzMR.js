@@ -1,0 +1,1 @@
+import{_ as e}from"./D4g1x73P.js";import{g as o,c as t,b as _,o as n}from"./DZIWRAfv.js";const r={class:"common-page-render"},s=o({__name:"questions",setup(a){return(c,m)=>(n(),t("div",r,[_(e)]))}}),p=Object.freeze(Object.defineProperty({__proto__:null,default:s},Symbol.toStringTag,{value:"Module"}));export{p as _};

@@ -1,1 +1,0 @@
-import{_ as e}from"./JHHnTrRn.js";import{g as o,c as t,b as _,o as r}from"./CwMY-vcA.js";const n={class:"common-page-render"},a=o({__name:"redux",setup(c){return(s,m)=>(r(),t("div",n,[_(e)]))}}),i=Object.freeze(Object.defineProperty({__proto__:null,default:a},Symbol.toStringTag,{value:"Module"}));export{i as _};
