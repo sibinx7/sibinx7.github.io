@@ -1,0 +1,1 @@
+import{b as o,K as t,h as s,R as c}from"./DSNMGLV5.js";const r={};function n(e,a){return t(),s("blockquote",null,[c(e.$slots,"default")])}const _=Object.assign(o(r,[["render",n]]),{__name:"ProseBlockquote"});export{_ as default};

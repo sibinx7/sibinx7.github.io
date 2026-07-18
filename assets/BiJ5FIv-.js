@@ -1,0 +1,1 @@
+import{b as o,K as s,h as r,R as t}from"./DSNMGLV5.js";const n={};function a(e,c){return s(),r("tbody",null,[t(e.$slots,"default")])}const _=Object.assign(o(n,[["render",a]]),{__name:"ProseTbody"});export{_ as default};
