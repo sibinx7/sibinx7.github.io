@@ -1,1 +1,0 @@
-import{_ as e}from"./DSFGLGSA.js";import{m as o,h as t,k as _,K as r}from"./Cfg9RdCn.js";const n={class:"common-page-render"},a=o({__name:"redux",setup(c){return(s,m)=>(r(),t("div",n,[_(e)]))}}),i=Object.freeze(Object.defineProperty({__proto__:null,default:a},Symbol.toStringTag,{value:"Module"}));export{i as _};

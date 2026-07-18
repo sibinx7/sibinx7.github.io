@@ -1,1 +1,0 @@
-import{_ as e}from"./DSFGLGSA.js";import{m as o,K as t,h as _,k as r}from"./Cfg9RdCn.js";const a={class:"common-page-render"},n=o({__name:"basic",setup(c){return(s,m)=>(t(),_("div",a,[r(e)]))}}),p=Object.freeze(Object.defineProperty({__proto__:null,default:n},Symbol.toStringTag,{value:"Module"}));export{p as _};
