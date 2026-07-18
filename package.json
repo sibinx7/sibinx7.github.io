@@ -9,7 +9,7 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "predeploy": "npm run generate",
-    "deploy": "gh-pages -d dist -t true",
+    "deploy": "gh-pages -d .output/public -t",
     "prelocal": "npm run generate",
     "local": "npm run preview"
   },

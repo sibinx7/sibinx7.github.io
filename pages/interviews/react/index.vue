@@ -4,67 +4,28 @@
   </div>
 </template>
 <script setup lang="ts">
-
 import Topics from "~/common/topics/topics.vue";
+import type {TopicLink} from "~/types/common";
 
-const listOfFiles = ref<Array<any>>([]);
 const route = useRoute();
 const topicSlug = (route.path.split('/').filter(Boolean).pop() || 'react').toString();
-const routeKey = `topics-${topicSlug}`;
+const docs = import.meta.glob('./doc/*.vue', { eager: true });
 
-const processFiles = async () => {
-  console.log('Start processing files before import.meta');
-  const files = import.meta.glob('./doc/*.vue', { eager: true });
-  const links: Array<any> = [];
-  console.log('Process files');
-  try{
-    console.log('Inside process files');
-    const contentsData  = await useAsyncData(`markdown-${routeKey}`,  () => {
-      console.log('Inside markdown useAsyncData')
-      return queryContent('/').find()
-    }, { server: true });
-    console.log(contentsData);
-    console.log('API calles');
-    const dataContent: any = contentsData?.data?.value;
-    console.log('Data content')
-    console.log(dataContent);
-    for(const file in files) {
-      if (file.includes('_')) continue; // Exclude files like '_files'
-      const fileName = file.replace(/^\.\/?/i, '')   .replace(/\/index(\.vue)?$/, '').replace('.vue', '');
-      const formattedName = fileName.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase());
-      const filePath = `/interviews/${topicSlug}/${fileName.replaceAll(/\/index/g, '')}`
-      const selectedMD = dataContent?.find((item: any) => {
-        return item._path === filePath
-      });
-      const selectedMDJSON = JSON.stringify(selectedMD);
-      const selectedMDObject = JSON.parse(selectedMDJSON || '{}');
+const asyncFileList = computed<TopicLink[]>(() => {
+  return Object.keys(docs)
+    .filter((file) => !file.includes('_'))
+    .map((file) => {
+      const fileName = file.replace(/^\.\/?/i, '').replace(/\/index(\.vue)?$/, '').replace('.vue', '');
+      const slug = fileName.replaceAll(/\/index/g, '');
+      const formattedName = slug.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase());
+      const filePath = `/interviews/${topicSlug}/${slug}`;
 
-      links.push({
-        id: Date.now(),
-        name: selectedMDObject?.title || formattedName, // Convert 'basic-javascript' to 'Basic Javascript'
-        title: selectedMDObject?.title,
+      return {
+        id: `${topicSlug}-${slug}`,
+        name: formattedName,
+        title: formattedName,
         path: filePath,
-      });
-    }
-    listOfFiles.value = links;
-    // console.log(links);
-  }catch(e){
-    console.log('Error')
-    console.log(e)
-  }
-}
-try{
-  processFiles();
-}catch(e){
-
-}
-
-onMounted(async () => {
-  await processFiles();
-})
-onServerPrefetch( async () => {
-  await processFiles();
-})
-
-
+      };
+    });
+});
 </script>

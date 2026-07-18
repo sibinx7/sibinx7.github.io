@@ -2,17 +2,7 @@
 import type {TopicLink} from "~/types/common";
 
 const props = defineProps(['links']);
-const { data: listOfFiles } = await useAsyncData<Array<TopicLink>>('links', () => {
-	return props.links;
-});
-
-onMounted(() => {
-
-});
-
-onServerPrefetch(() => {
-	// listOfFiles.value = props.links;
-})
+const listOfFiles = computed(() => (props.links || []) as TopicLink[]);
 </script>
 
 <template>
