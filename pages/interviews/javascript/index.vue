@@ -10,23 +10,24 @@ import type {TopicLink} from "~/types/common";
 
 const listOfFiles = ref<Array<any>>([]);
 const route = useRoute();
-
+const topicSlug = (route.path.split('/').filter(Boolean).pop() || 'javascript').toString();
+const routeKey = `topics-${topicSlug}`;
 
 const processFiles = async () => {
   console.log('Start processing files before import.meta');
 	const files = import.meta.glob('./doc/*.vue', { eager: true });
   const links: Array<TopicLink> = [];
   try{
-    const contentsData  = await useAsyncData('markdown',  () => {
+    const contentsData  = await useAsyncData(`markdown-${routeKey}`,  () => {
       console.log('Inside markdown useAsyncData')
       return queryContent('/').find()
     }, { server: true });
     const dataContent: any = contentsData?.data?.value;
     for(const file in files) {
-      if (file.includes('_')) return; // Exclude files like '_files'
+      if (file.includes('_')) continue; // Exclude files like '_files'
       const fileName = file.replace(/^\.\/?/i, '')   .replace(/\/index(\.vue)?$/, '').replace('.vue', '');
       const formattedName = fileName.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase());
-      const filePath = `/interviews/javascript/${fileName.replaceAll(/\/index/g, '')}`
+      const filePath = `/interviews/${topicSlug}/${fileName.replaceAll(/\/index/g, '')}`
       const selectedMD = dataContent?.find((item: any) => {
         return item._path === filePath
       });
@@ -48,7 +49,7 @@ const processFiles = async () => {
   }
 }
 
-const { data: asyncFileList } =  await useAsyncData('process', async () => {
+const { data: asyncFileList } =  await useAsyncData(`process-${routeKey}`, async () => {
 	await processFiles();
 	return listOfFiles.value;
 });

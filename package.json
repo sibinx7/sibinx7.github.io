@@ -26,13 +26,13 @@
     "gray-matter": "^4.0.3",
     "nuxt": "^4.4.6",
     "pinia": "^3.0.4",
-    "prismjs": "^1.29.0",
+    "prismjs": "^1.30.0",
     "vue": "latest",
     "vue-router": "latest"
   },
   "devDependencies": {
     "concurrently": "^9.2.1",
-    "gh-pages": "^6.2.0",
-    "sass": "^1.100.0"
+    "gh-pages": "^6.3.0",
+    "sass": "^1.101.0"
   }
 }
