@@ -1,0 +1,1 @@
+import{_ as e}from"./W0GdnEn2.js";import{g as o,c as a,b as r,o as s}from"./DFpOYd9Z.js";const t={class:"common-page-render"},d=o({__name:"redux",setup(c){return(n,_)=>(s(),a("div",t,[r(e)]))}});export{d as default};

@@ -1,1 +1,0 @@
-import{_ as o,c as t,a as n,o as s}from"./DZIWRAfv.js";const c={},r={class:"common-content section-wrapper"};function a(l,e){return s(),t("div",r,[...e[0]||(e[0]=[n("h1",null,"Hello",-1)])])}const d=o(c,[["render",a]]);export{d as default};

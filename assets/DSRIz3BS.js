@@ -1,1 +1,0 @@
-import{_ as e}from"./D4g1x73P.js";import{g as o,o as t,c as _,b as r}from"./DZIWRAfv.js";const a={class:"common-page-render"},c=o({__name:"basic",setup(n){return(s,m)=>(t(),_("div",a,[r(e)]))}}),p=Object.freeze(Object.defineProperty({__proto__:null,default:c},Symbol.toStringTag,{value:"Module"}));export{p as _};

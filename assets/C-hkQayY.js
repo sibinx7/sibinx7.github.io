@@ -1,0 +1,1 @@
+import{_ as e}from"./W0GdnEn2.js";import{g as o,c as t,b as _,o as n}from"./DFpOYd9Z.js";const r={class:"common-page-render"},a=o({__name:"generator-function",setup(c){return(s,m)=>(n(),t("div",r,[_(e)]))}}),p=Object.freeze(Object.defineProperty({__proto__:null,default:a},Symbol.toStringTag,{value:"Module"}));export{p as _};
