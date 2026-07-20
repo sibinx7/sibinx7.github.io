@@ -1,0 +1,1 @@
+import{_ as e}from"./DV_eQtFy.js";import{g as o,n as t,c as n,b as _,o as r}from"./DCE7Cm6W.js";const a={class:"common-page-render"},c=o({__name:"vdom-dom",setup(s){return t(()=>{console.log("VDOM-DOM mounted.")}),(m,l)=>(r(),n("div",a,[_(e)]))}}),i=Object.freeze(Object.defineProperty({__proto__:null,default:c},Symbol.toStringTag,{value:"Module"}));export{i as _};
