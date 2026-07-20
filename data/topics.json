@@ -21,7 +21,7 @@
 			"name": "React",
 			"type": "framework",
 			"icon": "devicon-react-original",
-			"link":"react",
+			"link": "react",
 			"color": "#8224f3"
 		},
 		{
@@ -111,6 +111,14 @@
 			"icon": "devicon-prisma-plain",
 			"link": "prisma",
 			"color": "#00adff"
+		},
+		{
+			"id": 15,
+			"name": "PlayWright",
+			"type": "framework",
+			"icon": "devicon-playwright-plain",
+			"link": "playwright",
+			"color": "#45ba4b"
 		}
 	]
 }
