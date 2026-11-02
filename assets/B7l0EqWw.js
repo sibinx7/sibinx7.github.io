@@ -1,0 +1,1 @@
+import{_ as e}from"./DQr4NL5n.js";import{g as o,c as t,b as _,o as n}from"./CFjZxFCq.js";const r={class:"common-page-render"},s=o({__name:"oct-js-questions",setup(c){return(a,m)=>(n(),t("div",r,[_(e)]))}}),p=Object.freeze(Object.defineProperty({__proto__:null,default:s},Symbol.toStringTag,{value:"Module"}));export{p as _};
