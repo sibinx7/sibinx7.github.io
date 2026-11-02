@@ -2,7 +2,7 @@
 title: October 2026 Javascript Questions
 ---
 
-### What is Hoisting 
+### What is Hoisting
 
 Hoisting in Javascript is a mechanism where Javascript processes declarations before executing the code, making certain variables and functions available earlier in their scope.
 
@@ -15,7 +15,7 @@ In simple terms JavaScript prepare declarations before executing statements
     var name = 'John'
 ```
 
-Answer:  `name` is undefined 
+Answer:  `name` is undefined
 
 #### Hoisting with `let` and `const`
 
@@ -24,11 +24,12 @@ Answer:  `name` is undefined
     let name = 'John'
 ```
 
-Answer:  `name` is not ReferenceError 
+Answer:  `name` is not ReferenceError
 
 #### Hoisting with `functions`
 
 ##### Unnamed function
+
 ```aiignore
     helloName()
     function helloName() {
@@ -42,22 +43,23 @@ Answer:  `helloName` is executed and prints 'Hello World'
 
 Similarly to variable `var` function return TypeError/Undefined, but `let` and `const` return ReferenceError
 
-
-##### How `JavaScript` handle hoisting internally 
+##### How `JavaScript` handle hoisting internally
 
 Phase 1: Creation Phase
-- Creates the execution context 
+
+- Creates the execution context
 - Registers variable and function declarations
-- Allocates memory for variables 
+- Allocates memory for variables
 - Sets up lexical environments
 
 Phase 2: Execution Phase
+
 - Executes the code line by line
 - Assigns values
 - Calls functions
 - Evaluate expressions
 
-### Constructor in JavaScript 
+### Constructor in JavaScript
 
 A constructor is a special function that creates and initializes an object instance of a class. In JavaScript, a constructor is defined using the `new` keyword and the `this` keyword. When a constructor is called, it creates a new object and sets the `this` keyword to refer to that object. The constructor can then initialize the object's properties and methods.
 
@@ -74,7 +76,7 @@ A constructor is a special function that creates and initializes an object insta
 
 ### Implements vs Extend
 
-Extend used to inherit other classes 
+Extend used to inherit other classes
 
 ```aiignore
 class Animal{
@@ -99,11 +101,9 @@ class Dog extends Animal{
 
 ```
 
-
 ### MicroTask vs MacroTask
 
-`MicroTask` and `MacroTask` are two categories of asynchronous tasks handled by the `Event Loop`. The key difference is their execution priority. `MicroTasks` run before then next `MacroTask`. 
-
+`MicroTask` and `MacroTask` are two categories of asynchronous tasks handled by the `Event Loop`. The key difference is their execution priority. `MicroTasks` run before then next `MacroTask`.
 
 | Features | MicroTask | MacroTask |
 | --- | --- | --- |
@@ -111,7 +111,6 @@ class Dog extends Animal{
 | Examples | Promises, async/await, queueMicrotask() | setTimeout, setInterval, I/O operations |
 | Execution Order | Runs before the next MacroTask | Runs after all MicroTasks |
 | Procesing | All queued microtasks are processed before the next MacroTask | One task is processed per event-loop iteration |
- 
 
 ```aiignore
 console.log("1. Start");
@@ -139,8 +138,7 @@ console.log("5. End");
 2. setTimeout
 ```
 
-
-### What is Event Emitter 
+### What is Event Emitter
 
 And Event Emitter is design pattern and mechanism that allows one part of the application to  emit ( publish) events and other parts of the application to subscribe to those events and react to them.
 
@@ -170,18 +168,18 @@ emitter.emit('userRegistered', {
 | `removeAllListeners` | Remove all event listeners |
 | `listenerCount` | Get the number of listeners for an event |
 
-
 ### What is a `Promise`
 
 A `Promise` is a `JavaScript` object that represents the eventual completion or failure of an asynchronus operation.
 
 #### Stages of `Promise`
 
-- Pending: Operation is still running 
-- Fulfilled: Operation completed successfully 
-- Rejected: Operation failed 
+- Pending: Operation is still running
+- Fulfilled: Operation completed successfully
+- Rejected: Operation failed
 
-#### Promise Example 
+#### Promise Example
+
 ```
 const myPromise = new Promise((resolve, reject) => {
     // Run some operation, async - await, setTimeout 
@@ -203,23 +201,22 @@ myPromise.then((response) => {
 
 ```
 
-#### Promise methods 
+#### Promise methods
 
-| Method | Behavior| When to Use |
-| -------| --------| ------------|
-|`Promise.all` | Resolve when all promises succeeded. Reject immediately if any promise fail |  When all independent tasks must complete successfully |
-|`Promise.allSettled`| Waits for all promises to suites and return array of status object | When you need the outcome of every request regardless of individual failures |
-|`Promise.race` | Settles as soon as the first Promise settles (success/failure) | Setting timeouts on requests or handling fastest response scenarios |
-|`Promise.any` | Resolve as soon as first Promise fullfill, ignore rejections unless all failes | Finding first successful response |
+| Method | Behavior | When to Use |
+| ------- | -------- | ------------ |
+| `Promise.all` | Resolve when all promises succeeded. Reject immediately if any promise fail | When all independent tasks must complete successfully |
+| `Promise.allSettled` | Waits for all promises to suites and return array of status object | When you need the outcome of every request regardless of individual failures |
+| `Promise.race` | Settles as soon as the first Promise settles (success/failure) | Setting timeouts on requests or handling fastest response scenarios |
+| `Promise.any` | Resolve as soon as first Promise fullfill, ignore rejections unless all failes | Finding first successful response |
 
-
-
-### How do you handle errors in Synchronous and Asynchronouse operations 
+### How do you handle errors in Synchronous and Asynchronouse operations
 
 Error handling in JavaScript differ between asynchronous and synchronus. Synchronous operation block execution and throw error immediately while asynchronous operations
 deals with results and rejections occure later without blocking, non blocking time.
 
-##### Synchronus operation 
+##### Synchronus operation
+
 ```
     try{
         const a = JSON.parse(<STRING DATA>)
@@ -228,7 +225,8 @@ deals with results and rejections occure later without blocking, non blocking ti
     }
 ```
 
-#### Asynchromous with `async - await` 
+#### Asynchromous with `async - await`
+
 ```
 try{
     const response = await fetch(')
@@ -239,7 +237,8 @@ try{
 
 #### Promise .catch
 
-Promise has catch block where error handled 
+Promise has catch block where error handled
+
 ```
 aPromise.then(() => {
 
@@ -249,7 +248,8 @@ aPromise.then(() => {
 
 ```
 
-#### Node global error 
+#### Node global error
+
 ```
     process.on('unhandledRejection', (reason, promise) => {
     console.error('Unhandled Rejection at:', promise, 'reason:', reason);
@@ -263,3 +263,4 @@ aPromise.then(() => {
     });
 ```
 
+####
