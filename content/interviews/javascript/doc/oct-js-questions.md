@@ -169,3 +169,97 @@ emitter.emit('userRegistered', {
 | `removeListener` | Remove an event listener |
 | `removeAllListeners` | Remove all event listeners |
 | `listenerCount` | Get the number of listeners for an event |
+
+
+### What is a `Promise`
+
+A `Promise` is a `JavaScript` object that represents the eventual completion or failure of an asynchronus operation.
+
+#### Stages of `Promise`
+
+- Pending: Operation is still running 
+- Fulfilled: Operation completed successfully 
+- Rejected: Operation failed 
+
+#### Promise Example 
+```
+const myPromise = new Promise((resolve, reject) => {
+    // Run some operation, async - await, setTimeout 
+    const success = true; // some api etc..
+    if(success){
+        resolve(//data)
+    }else{
+        reject(//reason)
+    }
+});
+
+myPromise.then((response) => {
+    // Success
+}).catch((error) => {
+    // Error
+}).finally(() => {
+    // After complete all
+})
+
+```
+
+#### Promise methods 
+
+| Method | Behavior| When to Use |
+| -------| --------| ------------|
+|`Promise.all` | Resolve when all promises succeeded. Reject immediately if any promise fail |  When all independent tasks must complete successfully |
+|`Promise.allSettled`| Waits for all promises to suites and return array of status object | When you need the outcome of every request regardless of individual failures |
+|`Promise.race` | Settles as soon as the first Promise settles (success/failure) | Setting timeouts on requests or handling fastest response scenarios |
+|`Promise.any` | Resolve as soon as first Promise fullfill, ignore rejections unless all failes | Finding first successful response |
+
+
+
+### How do you handle errors in Synchronous and Asynchronouse operations 
+
+Error handling in JavaScript differ between asynchronous and synchronus. Synchronous operation block execution and throw error immediately while asynchronous operations
+deals with results and rejections occure later without blocking, non blocking time.
+
+##### Synchronus operation 
+```
+    try{
+        const a = JSON.parse(<STRING DATA>)
+    }catch(e){
+        console.log('Error', e)
+    }
+```
+
+#### Asynchromous with `async - await` 
+```
+try{
+    const response = await fetch(')
+}catch(e){
+    console.log('Error ', e)
+}
+```
+
+#### Promise .catch
+
+Promise has catch block where error handled 
+```
+aPromise.then(() => {
+
+}).catch((error) => {
+    console.log(error)
+})
+
+```
+
+#### Node global error 
+```
+    process.on('unhandledRejection', (reason, promise) => {
+    console.error('Unhandled Rejection at:', promise, 'reason:', reason);
+    // Perform cleanup and gracefully shut down if necessary
+    });
+
+    // Catches truly uncaught synchronous exceptions
+    process.on('uncaughtException', (error) => {
+    console.error('Uncaught Exception thrown:', error);
+    process.exit(1);
+    });
+```
+
