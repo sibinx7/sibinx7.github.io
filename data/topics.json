@@ -77,7 +77,7 @@
 			"name": "Database",
 			"type": "database",
 			"icon": "devicon-azuresqldatabase-plain",
-			"link": "",
+			"link": "database",
 			"color": "#65e84a"
 		},
 		{
