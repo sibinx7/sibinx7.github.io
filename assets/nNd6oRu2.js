@@ -1,1 +1,0 @@
-import{_ as e}from"./BJS1HM9i.js";import{g as o,c as a,b as r,o as s}from"./DAAZKaRy.js";const t={class:"common-page-render"},d=o({__name:"redux",setup(c){return(n,_)=>(s(),a("div",t,[r(e)]))}});export{d as default};

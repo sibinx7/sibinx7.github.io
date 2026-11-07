@@ -1,0 +1,1 @@
+import{T as t}from"./tBYMi0kX.js";import{e as o,u as s,c as n,b as r,o as a}from"./DOqzqRKY.js";const m=o({__name:"index",setup(i){return(s().path.split("/").filter(Boolean).pop()||"typescript").toString(),(e,p)=>(a(),n("div",null,[r(t,{links:e.listOfFiles},null,8,["links"])]))}});export{m as default};

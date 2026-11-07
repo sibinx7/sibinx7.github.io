@@ -1,0 +1,1 @@
+import{_ as e}from"./8Cr-FHvi.js";import{e as o,c as s,b as a,o as t}from"./DOqzqRKY.js";const c={class:"common-page-render"},i=o({__name:"hooks",setup(n){return(r,_)=>(t(),s("div",c,[a(e)]))}});export{i as default};

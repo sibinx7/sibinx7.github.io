@@ -1,0 +1,1 @@
+import{_ as e}from"./8Cr-FHvi.js";import{e as o,c as a,b as r,o as s}from"./DOqzqRKY.js";const t={class:"common-page-render"},d=o({__name:"redux",setup(c){return(n,_)=>(s(),a("div",t,[r(e)]))}});export{d as default};

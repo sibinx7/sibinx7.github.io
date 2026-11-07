@@ -1,0 +1,1 @@
+import{T as o}from"./tBYMi0kX.js";import{e as t,u as s,c as n,b as r,o as a}from"./DOqzqRKY.js";const m=t({__name:"index",setup(l){return(s().path.split("/").filter(Boolean).pop()||"react").toString(),(e,p)=>(a(),n("div",null,[r(o,{links:e.listOfFiles},null,8,["links"])]))}});export{m as default};

@@ -1,0 +1,1 @@
+import{_ as e}from"./8Cr-FHvi.js";import{e as o,c as a,b as n,o as s}from"./DOqzqRKY.js";const t={class:"common-page-render"},i=o({__name:"index",setup(c){return(r,_)=>(s(),a("div",t,[n(e)]))}});export{i as default};

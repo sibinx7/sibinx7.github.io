@@ -1,0 +1,1 @@
+import{_ as e}from"./8Cr-FHvi.js";import{e as o,c as t,b as _,o as r}from"./DOqzqRKY.js";const a={class:"common-page-render"},n=o({__name:"playwright-actions",setup(c){return(s,i)=>(r(),t("div",a,[_(e)]))}}),p=Object.freeze(Object.defineProperty({__proto__:null,default:n},Symbol.toStringTag,{value:"Module"}));export{p as _};
