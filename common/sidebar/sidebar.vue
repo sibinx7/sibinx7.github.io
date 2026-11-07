@@ -47,7 +47,7 @@ import profileImage from "../../assets/profile/sibin.jpg";
 						<span class="bi bi-person"></span>
 						<span>About</span>
 					</a></div>
-					<div class="list-group-item"><a href="">
+					<div class="list-group-item"><a href="/resume">
 						<span class="bi bi-person-vcard"></span>
 						<span>Resume</span>
 					</a></div>
