@@ -1,1 +1,0 @@
-import{_ as e}from"./DQr4NL5n.js";import{g as o,c as t,b as a,o as n}from"./CFjZxFCq.js";const s={class:"common-page-render"},p=o({__name:"optimization",setup(c){return(r,_)=>(n(),t("div",s,[a(e)]))}});export{p as default};
